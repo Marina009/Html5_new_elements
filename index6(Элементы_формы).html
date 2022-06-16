@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5. Новые элементы_Графика</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+
+    <!----Highlight JS---->
+    <link rel="stylesheet" href="./styles/felipec.min.css">
+    <script src="./highlight.min.js"></script>
+    <script src="./numbers/highlightjs-line-numbers.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script>hljs.initLineNumbersOnLoad();</script>
+    <script>hljs.highlightAll();</script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <button id="back-to-top-button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+    <section class="header6">
+        <nav class="nav2">
+            <a href="index.html"><img src="images/logo.png" alt="Логотип"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Главная</a>
+                        <li>
+                            <a href="index.html#new_elements">Новые элементы</a>  
+                        </li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-title">
+        <h1>Элементы формы</h1>
+    </div>   
+    </section>
+
+    <!----------- Form start ------------->
+
+    <section class="content1">
+        <div class="html-definition">
+            <h1>Вступление</h1>
+            <p>Формы в Интернете — это очень полезная вещь, ведь именно с помощью них принимаются пользовательские данные, например, отзывы, заказы, различные голосования.  И чтобы принять пользовательский ввод на HTML-странице, необходимо использовать несколько элементов формы. В HTML5 добавлено пять таких элементов, а именно: meter, progress, datalist, output и keygen. Настало время их рассмотреть поближе. </p>
+        </div>
+    </section>
+
+    <!----------- Tag Meter ------------->
+
+    <section class="tagsdark4">
+        <div class="html-tag">
+            <h1 id="tag_meter">Тег <span class="tags2">&ltmeter&gt</span></h1>
+        </div>
+        <div class="block-page1">           
+            <div class="block-for-tag-description_dark-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltmeter&gt...&lt/meter&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Используется для графического представления числового значения (скалярного или дробного) в заданном диапазоне.<br> <i class="fa fa-exclamation" aria-hidden="true"></i> Элемент &ltmeter> не должен использоваться для обозначения индикатора прогресса. В таких случаях используется элемент &ltprogress>, который рассмотрен чуть ниже <i class="fa fa-arrow-down" aria-hidden="true"></i>.</p><br>
+            </div>
+            <div class="block-for-tag-description_dark-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Фразообразующий контент. Не может включать другие элементы meter.</p>
+            </div>
+        </div>
+        <table class="table">
+        <caption><h1>Специальные атрибуты</h1></caption>
+            <thead>
+                <tr>
+                    <th class="firstcol">Атрибут</th>
+                    <th class="secondcol">Значение</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="firstcol">value</td>
+                    <td class="secondcol">число</td>
+                    <td><i class="fa fa-exclamation" aria-hidden="true"></i> Является обязательным атрибутом. Указывает текущее числовое значение, которое должно входить в пределы диапазона, определяемого атрибутами min и max. По умолчанию равно 0.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">form</td>
+                    <td class="secondcol">id-формы</td>
+                    <td>Устанавливает связь между формой и элементом &ltmeter>.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">high</td>
+                    <td class="secondcol">число</td>
+                    <td>Определяет диапазон, при достижении которого значение считается высоким. По умолчанию равно значению атрибута max.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">low</td>
+                    <td class="secondcol">число</td>
+                    <td>Определяет диапазон, при достижении которого значение считается низким. По умолчанию равно значению атрибута min.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">max</td>
+                    <td class="secondcol">число</td>
+                    <td>Обозначает максимальное значение диапазона. Если атрибут не указан, то максимальное значение будет равно 1.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">min</td>
+                    <td class="secondcol">число</td>
+                    <td>Указывает минимальное значение диапазона. Если атрибут не указан, то минимальное значение будет равно 0.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">optimum</td>
+                    <td class="secondcol">число</td>
+                    <td>Определяет оптимальное значение, которое должно входить в пределы диапазона, определяемого атрибутами min и max.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltp>Объём вашей свободной памяти составляет: 
+    &ltmeter min="0" max="64" value="40">40 из 64 Гб&ltmeter>
+&lt/p>
+            </code>
+        </pre>
+        <div class="html-tag-result">
+            <h1>Результат</h1>
+            <img src="images/metertag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Progress ------------->
+
+    <section class="tagslight4">
+        <div class="html-tag">
+            <h1 id="tag_progress">Тег <span class="tags2">&ltprogress&gt</span></h1>
+        </div>
+        <div class="block-page1">           
+            <div class="block-for-tag-description_light-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltprogress&gt...&lt/progress&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Визуально представляет ход выполнения задачи (например, процесс загрузки) и отображает, какой процент задачи уже выполнен. Обычно выглядит как прогресс-бар. Изменения в индикаторе прогресса производятся с помощью JavaScript.<br><i class="fa fa-exclamation" aria-hidden="true"></i> Данный элемент стоит использовать именно для вывода информации о процессе, который должен завершиться. А Для вывода количества, например, места на диске лучше подойдёт элемент meter, который рассмотрен чуть выше <i class="fa fa-arrow-up" aria-hidden="true"></i>.</p><br>
+            </div>
+            <div class="block-for-tag-description_light-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Фразообразующий контент. Не может включать элементы progress.</p>
+            </div>
+        </div>
+        <table class="table">
+        <caption><h1>Специальные атрибуты</h1></caption>
+            <thead>
+                <tr>
+                    <th class="firstcol">Атрибут</th>
+                    <th class="secondcol">Значение</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="firstcol">max</td>
+                    <td class="secondcol">число</td>
+                    <td>Определяет общий объем работы, необходимый для выполнения задачи. Значением атрибута должно быть положительное число. По умолчанию 1.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">value</td>
+                    <td class="secondcol">число</td>
+                    <td>Указывает, какая часть задачи выполнена.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&lth3>Прогресс выполнения  задачи&lt/h3>
+&ltp>Прогресс: &ltprogress id="task" value="0" max="100">&ltspan>0&lt/span>%&lt/progress>&lt/p>
+&ltscript type="text/javascript">
+    var i = 0;
+    var progressBar = document.getElementById("task");
+    function countNumbers(){
+        if(i &lt 100){
+            i = i + 1;
+            progressBar.value = i;
+        }
+        setTimeout("countNumbers()", 100);
+    }
+    countNumbers();
+&lt/script>
+            </code>
+        </pre>
+        <div class="html-tag-result">
+            <h1>Результат (*идёт анимация прогресса)</h1>
+            <img src="images/progresstag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Datalist ------------->
+
+    <section class="tagsdark4">
+        <div class="html-tag">
+            <h1 id="tag_datalist">Тег <span class="tags2">&ltdatalist&gt</span></h1>
+        </div>
+        <div class="block-page1">           
+            <div class="block-for-tag-description_dark-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltdatalist&gt...&lt/datalist&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Указывает список предопределённых вариантов элемента input. Эти варианты можно выбрать с помощью раскрывающегося меню или с помощью автозаполнения, когда пользователь начинает вводить один из них. Этот элемент используют для быстрого выбора пользователем поля ввода.</p><br>
+            </div>
+            <div class="block-for-tag-description_dark-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Фразообразующий контент, или несколько элементов option.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltlabel for="favourite-color">Выберите ваш любимый цвет:&lt/label>
+&ltinput list="colors" id="favourite-color" name="favourite-color">
+&ltdatalist id="colors">
+    &ltoption value="Красный">
+    &ltoption value="Оранжевый">
+    &ltoption value="Жёлтый">
+    &ltoption value="Зелёный">
+    &ltoption value="Голубой">
+&lt/datalist>
+            </code>
+        </pre>
+        <div class="html-tag-result-two_images">
+            <h1>Результат до наведения на поле ввода</h1>
+            <img src="images/datalisttag_result.png" alt=""/>
+            <h1>Результат после наведения на поле ввода</h1>
+            <img src="images/datalisttag_result2.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Output ------------->
+
+    <section class="tagslight4">
+        <div class="html-tag">
+            <h1 id="tag_output">Тег <span class="tags2">&ltoutput&gt</span></h1>
+        </div>
+        <div class="block-page1">
+            
+            <div class="block-for-tag-description_light-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltoutput&gt...&lt/output&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Представляет результат вычислений пользователя. Обычно всё расчитывается с помощью скриптов. Лучше использовать именно этот тег, если нужно показать результат. К примеру, если форма представлена в виде калькулятора, тогда в &ltoutput> выводится результат вычислений.</p><br>
+            </div>
+            <div class="block-for-tag-description_light-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Фразообразующий контент. </p>
+            </div>
+        </div>
+        <table class="table">
+        <caption><h1>Специальные атрибуты</h1></caption>
+            <thead>
+                <tr>
+                    <th class="firstcol">Атрибут</th>
+                    <th class="secondcol">Значение</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="firstcol">for</td>
+                    <td class="secondcol">id-элемента</td>
+                    <td>Определяет связь между результатом вычисления и элементами, используемыми при вычислении.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">form</td>
+                    <td class="secondcol">id-формы</td>
+                    <td>Обозначает форму, которой принадлежит элемент output.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">name</td>
+                    <td class="secondcol">текст</td>
+                    <td>Указывает имя для элемента управления формы, используемому при передаче данных формы.</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltform oninput="myCalc.value = parseInt(a.value) * parseInt(b.value)">
+&ltinput type="number" id="a"> * &ltinput type="number" id="b"> = 
+&ltoutput name="myCalc" for="a b">&lt/output>
+&lt/form>
+            </code>
+        </pre>
+        <div class="html-tag-result_big_image">
+            <h1>Результат (после введения данных)</h1>
+            <img src="images/outputtag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Keygen ------------->
+
+    <section class="tagsdark4">
+        <div class="html-tag">
+            <h1 id="tag_keygen">Тег <span class="tags2">&ltkeygen&gt</span></h1>
+        </div>
+        <div class="block-page1">           
+            <div class="block-for-tag-description_dark-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltkeygen/&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Используется как часть элемента form для того, чтобы генерировать пару ключей (закрытый и открытый). Эти ключи используются для шифрования и расшифровки данных. Когда пользователь отправляет форму, открытый ключ отправляется на сервер, а закрытый – хранится локально. </p><br>
+            </div>
+            <div class="block-for-tag-description_dark-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Пустой, так как этот элемент включает только начальный тег и не может содержать какие-либо контенты.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltform>Никнейм пользователя: &ltinput type="text" name="user_name">&ltbr>
+    Шифрование: &ltkeygen name="secure">&ltinput type="submit">
+&lt/form>
+            </code>
+        </pre>
+        <div class="html-tag-result-two_images">
+            <h1>Результат (ввод данных)</h1>
+            <img src="images/keygentag_result.png" alt=""/>
+            <h1>Подсказка после повторного ввода</h1>
+            <img src="images/keygentag_result2.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Footer ------------->
+
+    <section class="footer6">      
+        <div class="colcol-1">
+            <a href="index.html#new_elements"><h3>Новые элементы</h3></a>
+                <a href="index2(Семантика).html">Семантика</a>
+                <a href="index3(Графика).html">Графика</a>
+                <a href="index4(Интерактивность).html">Интерактивность</a>
+                <a href="index5(Мультимедиа).html">Мультимедиа</a>
+                <a href="index6(Элементы_формы).html">Элементы формы</a>
+                <a href="index7(Аннотация_Ruby).html">Аннотация Ruby</a>
+        </div>  
+        <div class="colcol-2">
+            Терпение и труд всё перетрут! <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+        </div>
+        <div>
+            <a href="index.html"><img src="images/logofooter.png" alt="Лого"></a>
+        </div>
+    </section>
+
+    <schljs.highlightAll src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></schljs.highlightAll>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+    window.addEventListener("scroll", function() {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
+</body>
+</html>    

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5. Новые элементы_Графика</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+
+    <!----Highlight JS---->
+    <link rel="stylesheet" href="./styles/felipec.min.css">
+    <script src="./highlight.min.js"></script>
+    <script src="./numbers/highlightjs-line-numbers.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script>hljs.initLineNumbersOnLoad();</script>
+    <script>hljs.highlightAll();</script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <button id="back-to-top-button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+    <section class="header5">
+        <nav class="nav2">
+            <a href="index.html"><img src="images/logo.png" alt="Логотип"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Главная</a>
+                        <li>
+                            <a href="index.html#new_elements">Новые элементы</a>  
+                        </li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-title">
+        <h1>Мультимедиа</h1>
+    </div>   
+    </section>
+
+    <!----------- Multimedia start ------------->
+
+    <section class="content1">
+        <div class="html-definition">
+            <h1>Вступление</h1>
+            <p>Когда сеть только зарождалась, это была простая тектстовая среда, которая состояла в основном из списков, абзацев и гиперссылок. И примерно в 1993 году на рынке появились первые графические веб-браузеры, в которых визуальные элементы, такие как изображения и графика, заняли центральное место.<br>А роль видео- и аудиоматериалов в Интернете сильно возросла с появлением HTML5. И, благодаря интеграции мультимедиа в HTML5, веб-разработчики смогли включать информацию в формате мультимедиа в свои проекты, не нуждаясь в поддержке третьих сторон (например, как это было с Flash).<br><br>HTML5 представил два новых элемента: audio и video, которые включают функции воспроизведения для поддерживаемых форматов мультимедиа. А также еще появились три элемента, которые помогают настраивать мультимедийный<br>контент – это embed, source и track.<br><br>Рассмотрим же теперь эти элементы подробнее!</p>
+        </div>
+    </section>
+
+    <!----------- Tag Video ------------->
+
+    <section class="tagsdark2">
+        <div class="html-tag">
+            <h1 id="tag_video">Тег <span class="tags2">&ltvideo&gt</span></h1>
+        </div>
+        <div class="block-page1">           
+            <div class="block-for-tag-description_dark-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltvideo&gt...&lt/video&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Встраивает видео на веб-страницу. Адрес видео задаётся внутри контейнера &ltvideo> с помощью тега &ltsource> или атрибута src. Любой текст внутри элемента &ltvideo> отображается браузером в том случае, когда сам элемент или формат используемого видеофайла не поддерживается браузером. Также, если браузер не поддерживает определённый формат видео, можно добавить в тег несколько форматов одного и того же файла. На данный момент для видеоэлемента поддерживаются три основных видеоформата: MP4, Ogg и WebM. </p><br>
+            </div>
+            <div class="block-for-tag-description_dark-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Текстовый контент;<br><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> если данный элемент имеет атрибут src, то ноль или более элементов track;<br><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> если элемент не имеет атрибута src, то ноль или более элементов source, ноль или более элементов track.</p>
+            </div>
+        </div>
+        <table class="table">
+        <caption><h1>Специальные атрибуты</h1></caption>
+            <thead>
+                <tr>
+                    <th class="firstcol">Атрибут</th>
+                    <th class="secondcol">Значение</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="firstcol">autoplay</td>
+                    <td class="secondcol">autoplay</td>
+                    <td>Автоматическое воспроизведение мультимедийного файла после загрузки страницы.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">controls</td>
+                    <td class="secondcol">controls</td>
+                    <td>Добавляет стандартные элементы управления видеоплеером: кнопку воспроизведения и паузы, полосу прокрутки, громкость звука, полноэкранный режим и другие элементы, в зависимости от браузера. </td>
+                </tr>
+                <tr>
+                    <td class="firstcol">height</td>
+                    <td class="secondcol">пиксели</td>
+                    <td>Задаёт высоту окна видеоплеера.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">loop</td>
+                    <td class="secondcol">loop</td>
+                    <td>Указывает, что воспроизведение будет начинаться сначала, каждый раз, после завершения видео.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">muted</td>
+                    <td class="secondcol">muted</td>
+                    <td>Видео начнёт играть без звука, пока его не включит пользователь.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">poster</td>
+                    <td class="secondcol">URL</td>
+                    <td>URL-адрес картинки, которая будет показываться, пока видео не загрузится. Если её не будет, то, пока не загрузится первый кадр, на месте видео пользователь увидит чёрный прямоугольник.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">preload</td>
+                    <td class="secondcol">none<br><br>metadata<br><br>auto</td>
+                    <td>Указывает, какие действия должен выполнять браузер, если для видеоплеера не указан атрибут autoplay. При совместном использовании с атрибутом autoplay атрибут preload игнорируется. Значение none означает, что загрузка видеофайла начнется только после щелчка мыши по кнопке воспроизведение. Metadata осуществляет сбор информации о видеофайле: размер, первый кадр, список воспроизведения, длительность. С помощью значения auto загрузка видеофайла начинается после загрузки страницы.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">src</td>
+                    <td class="secondcol">URL</td>
+                    <td>Определяет путь к нужному видеофайлу (абсолютный или относительный).</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">width</td>
+                    <td class="secondcol">пиксели</td>
+                    <td>Устанавливает ширину видеоплеера.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltvideo controls="controls" src="video.mp4" width="320px">
+    Ваш браузер не поддерживает это видео.
+&lt/video>
+            </code>
+        </pre>
+        <div class="html-tag-result_big_image">
+            <h1>Результат</h1>
+            <img src="images/videotag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Source ------------->
+
+    <section class="tagslight3">
+        <div class="html-tag">
+            <h1 id="tag_source">Тег <span class="tags2">&ltsource&gt</span></h1>
+        </div>
+        <div class="block-page1">
+            
+            <div class="block-for-tag-description_light-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltsource/&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Используется внутри элементов audio и video для указания расположения файлов. Также можно использовать несколько элементов &ltsource> для указания нескольких альтернативных аудио/видео файлов, чтобы обозначить, что они доступны в нескольких форматах. Браузер может просматривать список элементов source до тех пор, пока не найдёт формат, который можно воспроизводить.<br><br>Пример данного тега находится ниже, в комбинации с элементом audio <i class="fa fa-arrow-down" aria-hidden="true"></i>.</p><br>
+            </div>
+            <div class="block-for-tag-description_light-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Пустой, так как этот элемент включает только начальный тег и не может содержать какие-либо контенты.</p>
+            </div>
+        </div>     
+        <table class="table2">
+        <caption><h1>Специальные атрибуты</h1></caption>
+            <thead>
+                <tr>
+                    <th class="firstcol">Атрибут</th>
+                    <th class="secondcol">Значение</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="firstcol">src</td>
+                    <td class="secondcol">URL</td>
+                    <td>Определяет путь к нужному видеофайлу (абсолютный или относительный).</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">media</td>
+                    <td class="secondcol">медиа-запросы</td>
+                    <td>Указывает под какие типы устройств оптимизирован файл. Браузеры могут использовать этот атрибут для определения, возможно ли воспроизведение файла или нет.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">type</td>
+                    <td class="secondcol">тип медиа</td>
+                    <td>Определяет MIME-тип медиа ресурса. Возможные значения атрибута для видео-файлов: video/ogg; video/mp4; video/webm, а для звуковых файлов: audio/ogg; audio/mpeg.</td>
+                </tr>
+            </tbody>
+        </table>      
+    </section>
+
+    <!----------- Tag Audio ------------->
+
+    <section class="tagsdark2">
+        <div class="html-tag">
+            <h1 id="tag_audio">Тег <span class="tags2">&ltaudio&gt</span></h1>
+        </div>
+        <div class="block-page1">           
+            <div class="block-for-tag-description_dark-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltaudio&gt...&lt/audio&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Добавляет на страницу аудиоплеер, который воспроизводит звуковой файл. Можно также  добавить несколько форматов одного файла, чтобы браузер воспроизвёл тот формат, который он поддерживает — для этого нужно добавить вложенные теги &ltsource>.</p><br>
+            </div>
+            <div class="block-for-tag-description_dark-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Включающий атрибут src либо один или более элементов source, за которыми следует потоковый или фразообразующий контент. Применение элементов video и audio не допускаются.</p>
+            </div>
+        </div>
+        <table class="table">
+        <caption><h1>Специальные атрибуты</h1></caption>
+            <thead>
+                <tr>
+                    <th class="firstcol">Атрибут</th>
+                    <th class="secondcol">Значение</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="firstcol">autoplay</td>
+                    <td class="secondcol">autoplay</td>
+                    <td>Автоматическое воспроизведение аудиофайла после загрузки страницы.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">controls</td>
+                    <td class="secondcol">controls</td>
+                    <td>Добавляет стандартные элементы управления аудиоплеером: кнопку воспроизведения и паузы, громкость звука и другие элементы, в зависимости от браузера. </td>
+                </tr>
+                <tr>
+                    <td class="firstcol">loop</td>
+                    <td class="secondcol">loop</td>
+                    <td>Указывает, что воспроизведение будет начинаться сначала, каждый раз, после завершения аудио.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">muted</td>
+                    <td class="secondcol">muted</td>
+                    <td>Звук будет на нуле, пока пользователь его не увеличит.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">preload</td>
+                    <td class="secondcol">none<br><br>metadata<br><br>auto</td>
+                    <td>Указывает, какие действия должен выполнять браузер, если для аудиооплеера не указан атрибут autoplay. При совместном использовании с атрибутом autoplay атрибут preload игнорируется. Значение none означает, что загрузка аудиофайла начнется только после щелчка мыши по кнопке воспроизведение. Metadata осуществляет сбор информации об аудиофайле: размер, список воспроизведения, длительность. С помощью значения auto загрузка аудиофайла начинается после загрузки страницы.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">src</td>
+                    <td class="secondcol">URL</td>
+                    <td>Определяет путь к нужному аудиофайлу (абсолютный или относительный).</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltaudio controls="controls">
+    &ltsource src="beautiful_song.mp3" type="audio/mp3">
+    Ваш браузер не поддерживает эту аудиозапись.
+&lt/audio> 
+            </code>
+        </pre>
+        <div class="html-tag-result">
+            <h1>Результат</h1>
+            <img src="images/audiotag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Embed ------------->
+
+    <section class="tagslight99">
+        <div class="html-tag">
+            <h1 id="tag_embed">Тег <span class="tags2">&ltembed&gt</span></h1>
+        </div>
+        <div class="block-page1">         
+            <div class="block-for-tag-description_light-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltembed/&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Используется для вставки на страницу контента в сторонних форматах, которые браузер отображает с помощью плагинов. Чаще всего используется для видео- и аудиоконтента.<br>Если на компьютере пользователя не установлен нужный для отображения контента плагин, то он увидит в окне предупреждение, например: "Плагин Adobe Flash Player больше не поддерживается".</p><br>
+            </div>
+            <div class="block-for-tag-description_light-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Пустой, так как этот элемент включает только начальный тег и не может содержать какие-либо контенты.</p>
+            </div>
+        </div>       
+        <table class="table">
+        <caption><h1>Специальные атрибуты</h1></caption>
+            <thead>
+                <tr>
+                    <th class="firstcol">Атрибут</th>
+                    <th class="secondcol">Значение</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="firstcol">src</td>
+                    <td class="secondcol">URL</td>
+                    <td>Указывает адрес внешнего файла, который будет вставлен в элемент.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">type</td>
+                    <td class="secondcol">тип медиа</td>
+                    <td>Определяет тип загружаемого контента в формате MIME. Тип указывать не обязательно, но желательно. Так браузер будет точно знать, какой плагин использовать для отображения контента.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">width</td>
+                    <td class="secondcol">пиксели</td>
+                    <td>Определяет ширину вложенного содержимого.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">height</td>
+                    <td class="secondcol">пиксели</td>
+                    <td>Определяет высоту вложенного содержимого.</td>
+                </tr>
+            </tbody>
+        </table>
+         <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltembed src="video3.mov" width="320px" type="video/quicktime">
+
+            </code>
+        </pre>
+        <div class="html-tag-result">
+            <h1>Результат</h1>
+            <img src="images/embedtag_result.png" alt=""/>
+        </div>
+        
+    </section>
+
+    <!----------- Tag Track ------------->
+
+    <section class="tagsdark2">
+        <div class="html-tag">
+            <h1 id="tag_track">Тег <span class="tags2">&lttrack&gt</span></h1>
+        </div>
+        <div class="block-page1">         
+            <div class="block-for-tag-description_dark-1col">
+                <h1>Синтаксис:</h1>
+                <p>&lttrack/&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Используется в качестве дочернего элемента для тегов &ltaudio> и &ltvideo> для указания субтитров, заголовка файла или других файлов, содержащих текст, которые должны быть видны при воспроизведении.</p><br>
+            </div>
+            <div class="block-for-tag-description_dark-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Пустой, так как этот элемент включает только начальный тег и не может содержать какие-либо контенты.</p>
+            </div>
+        </div>
+        <table class="table">
+        <caption><h1>Специальные атрибуты</h1></caption>
+            <thead>
+                <tr>
+                    <th class="firstcol">Атрибут</th>
+                    <th class="secondcol">Значение</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="firstcol">src</td>
+                    <td class="secondcol">URL</td>
+                    <td>Указывает URL-адрес файла с дорожкой субтитров. <i class="fa fa-exclamation" aria-hidden="true"></i> Является обязательным атрибутом.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">default</td>
+                    <td class="secondcol">default</td>
+                    <td>Указывает, что дорожка должна быть включена, если пользовательские настройки это позволяют.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">kind</td>
+                    <td class="secondcol"><br>captions<br><br>chapters<br><br>descriptions<br><br>metadata<br><br>subtitles<br><br></td>
+                    <td>Определяет тип текстовой дорожки, если атрибут не указан, то по умолчанию используется значение subtitles, которое обеспечивает транскрипцию или перевод диалога, который отображается в окне воспроизведения видео. Значение captions обеспечивает полное описание аудиофайла, включая звуковые эффекты и другие звуки, когда звук недоступен, или для людей со слабым слухом. Значение chapters обозначает заголовки глав, используемых для навигации по мультимедийному ресурсу. Descriptions указывает текстовое описание видео контента, например, для слепых пользователей. Metadata представляет дорожку, которая предназначена для использования сценариями (эта информация не видна для пользователей). </td>
+                </tr>
+                <tr>
+                    <td class="firstcol">label</td>
+                    <td class="secondcol">текстовая строка</td>
+                    <td>Указывает заголовок для дорожки, используемый браузером при перечислении доступных текстовых дорожек.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">srclang</td>
+                    <td class="secondcol">код языка</td>
+                    <td>Указывает двухбуквенный код языка, который используется в текстовой дорожке. <br><i class="fa fa-exclamation" aria-hidden="true"></i> Этот атрибут обязатален, если kind="subtitles".</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltvideo controls="controls" src="video.mp4" width="320px">
+    &lttrack src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+&lt/video>
+            </code>
+        </pre>
+        <div class="html-tag-result">
+            <h1>Результат</h1>
+            <img src="images/tracktag_result.png" alt=""/>
+        </div>
+    </section>
+   
+    <!----------- Footer ------------->
+
+    <section class="footer5">      
+        <div class="colcol-1">
+            <a href="index.html#new_elements"><h3>Новые элементы</h3></a>
+                <a href="index2(Семантика).html">Семантика</a>
+                <a href="index3(Графика).html">Графика</a>
+                <a href="index4(Интерактивность).html">Интерактивность</a>
+                <a href="index5(Мультимедиа).html">Мультимедиа</a>
+                <a href="index6(Элементы_формы).html">Элементы формы</a>
+                <a href="index7(Аннотация_Ruby).html">Аннотация Ruby</a>
+        </div>  
+        <div class="colcol-2">
+            Терпение и труд всё перетрут! <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+        </div>
+        <div>
+            <a href="index.html"><img src="images/logofooter.png" alt="Лого"></a>
+        </div>
+    </section>
+
+    <schljs.highlightAll src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></schljs.highlightAll>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+    window.addEventListener("scroll", function() {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
+</body>
+</html>    

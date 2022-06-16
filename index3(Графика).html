@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5. Новые элементы_Графика</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+
+    <!----Highlight JS---->
+    <link rel="stylesheet" href="./styles/felipec.min.css">
+    <script src="./highlight.min.js"></script>
+    <script src="./numbers/highlightjs-line-numbers.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script>hljs.initLineNumbersOnLoad();</script>
+    <script>hljs.highlightAll();</script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <button id="back-to-top-button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+    <section class="header3">
+        <nav class="nav2">
+            <a href="index.html"><img src="images/logo.png" alt="Логотип"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Главная</a>
+                        <li>
+                            <a href="index.html#new_elements">Новые элементы</a>  
+                        </li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-title-yellow">
+        <h1>Графика</h1>
+    </div>   
+    </section>
+
+    <!----------- Graphics start ------------->
+
+    <section class="content1">
+        <div class="html-definition">
+            <h1>Вступление</h1>
+            <p>В HTML5 появилась возможность рисовать графику на веб-странице, используя элементы HTML, вместо того, чтобы зависеть от изображений или сторонних компонентов, таких как Flash. И всё это благодаря двум добавленным графическим элементам: Canvas и SVG. <br><br>Перейдём же теперь к их рассмотрению!</p>
+        </div>
+    </section>
+
+    <!----------- Tag Canvas ------------->
+
+    <section class="tagsdark2">
+        <div class="html-tag">
+            <h1 id="tag_canvas">Тег <span class="tags2">&ltcanvas&gt</span></h1>
+        </div>
+        <div class="block-page1">         
+            <div class="block-for-tag-description_dark-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltcanvas>...&ltcanvas/></p><br>
+                <h1>О теге:</h1>
+                <p>Этот тег можно назвать одним из самых гибких среди новых тегов HTML, ведь он стал новой основой для веб-игр и других интерактивных компонентов.<br>&ltCanvas>, как и его имя, представляет собой чистый лист, двумерный холст, на котором создаются <b>растровые</b> изображения и различные формы, а управлять ими необходимо с помощью кода <b>JavaScript</b>. А созданная данным элементом графика уже сочетается и дополняет остальную часть DOM (объектную модель документа). Рисунок на холсте HTML, сгенерированный JavaScript может быть преобразован в PNG, и пользователь может загрузить это изображение.</p>
+            </div>
+            <div class="block-for-tag-description_dark-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Прозрачный (то есть элементы &lta>, &ltaudio>, &ltcanvas>, &ltdel>, &ltins>, &ltmap>, &ltobject> и &ltvideo>, которые наследуют тип содержимого родительского элемента), фразообразующий или потоковый контент.</p>
+            </div>
+        </div>
+        <table class="table">
+        <caption><h1>Специальные атрибуты</h1></caption>
+            <thead>
+                <tr>
+                    <th class="firstcol">Атрибут</th>
+                    <th class="secondcol">Значение</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="firstcol">width</td>
+                    <td class="secondcol">пиксели</td>
+                    <td>Задаёт высоту области холста.</td>
+                </tr>
+                <tr>
+                    <td class="firstcol">height</td>
+                    <td class="secondcol">пиксели</td>
+                    <td>Задаёт ширину области холста.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltcanvas id="canvas" width="500" height="180">&lt/canvas>
+&ltscript> const canvas = document.getElementById("canvas");
+           const ctx = canvas.getContext("2d");
+           ctx.fillStyle = 'purple';
+           ctx.shadowOffsetX = 5;
+           ctx.shadowOffsetY = 5;
+           ctx.shadowBlur    = 5;
+           ctx.shadowColor   = 'rgba(204, 204, 204, 0.9)';
+           ctx.fillRect(50,5,60,150);&lt/script>
+        </code>
+        </pre>
+        <div class="html-tag-result_big_image">
+            <h1>Результат</h1>
+            <img src="images/canvastag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Svg ------------->
+
+    <section class="tagslight2">
+        <div class="html-tag">
+            <h1 id="tag_svg">Тег <span class="tags2">&ltsvg&gt</span></h1>
+        </div>
+        <div class="block-page1">        
+            <div class="block-for-tag-description_light-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltsvg&gt...&lt/svg&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Расшифровывается, как <b>Масштабируемая векторная графика</b> (Scalable vector graphics) и, соответственно, используется для создания двухмерной векторной графики. Представляет собой формат векторного изображения на основе XML для обеспечения интерактивности.<br>Как и HTML, SVG имеет DOM (объектную модель документа). SVG, как и HTML поддерживает обработчики событий. А это значит, что, используя эту технологию, можно реализовывать различные интерактивные действия (например, эффекты наведения). Также изображения SVG могут содержать гиперссылки на другие документы.<br> SVG можно изменять как из CSS, используя таблицы стилей, так и, используя JavaScript. Содержимое SVG можно анимировать с помощью встроенных элементов анимации. </p><br>
+            </div>
+            <div class="block-for-tag-description_light-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Svg-элементы, то есть элементы анимации, различные фигуры (линия, круг, прямоугольник, эллипс, полигон, полилиния), структурные элементы, градиенты.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltsvg height="100" width="120">
+    &ltcircle cx="80" cy="50" r="40" fill="turquoise"/>
+&lt/svg>
+            </code>
+        </pre>
+        <div class="html-tag-result_big_image">
+            <h1>Результат</h1>
+            <img src="images/svgtag_result.png" alt=""/>
+        </div>        
+    </section>
+
+    <!----------- Footer ------------->
+
+    <section class="footer3">      
+        <div class="colcol-1">
+            <a href="index.html#new_elements"><h3>Новые элементы</h3></a>
+                <a href="index2(Семантика).html">Семантика</a>
+                <a href="index3(Графика).html">Графика</a>
+                <a href="index4(Интерактивность).html">Интерактивность</a>
+                <a href="index5(Мультимедиа).html">Мультимедиа</a>
+                <a href="index6(Элементы_формы).html">Элементы формы</a>
+                <a href="index7(Аннотация_Ruby).html">Аннотация Ruby</a>
+        </div>  
+        <div class="colcol-2">
+            Терпение и труд всё перетрут! <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+        </div>
+        <div>
+            <a href="index.html"><img src="images/logofooter.png" alt="Лого"></a>
+        </div>
+    </section>
+
+    <schljs.highlightAll src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></schljs.highlightAll>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+    window.addEventListener("scroll", function() {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html5. Новые элементы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@500&display=swap" rel="stylesheet"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@800&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <button id="back-to-top-button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Логотип"></a>     
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Главная</a>
+                        <li>
+                            <a href="#new_elements">Новые элементы
+                                <span class="fa-li"><i class="fa fa-sort-desc"></i></span>
+                            </a>  
+                            <div class="drop-down-menu">
+                                <ul>
+                                    <li><a href="index2(Семантика).html">Семантика</li></a>
+                                    <li><a href="index3(Графика).html">Графика</li></a>
+                                    <li><a href="index4(Интерактивность).html">Интерактивность</li></a>
+                                    <li><a href="index5(Мультимедиа).html">Мультимедиа</li></a>
+                                    <li><a href="index6(Элементы_формы).html">Элементы формы</li></a>
+                                    <li><a href="index7(Аннотация_Ruby).html">Аннотация Ruby</li></a>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-title" >
+        <h1>HTML5.<br/> Время изучать!</h1>
+        <a href="#new_elements" class="elements-btn">Сразу к элементам</a>
+    </div>   
+    </section>
+
+    <!----------- Content ----------->
+
+    <section class="content1">
+        <div class="html-definition">
+            <h1>Что такое HTML?</h1>
+            <p>HTML — это язык гипертекстовой разметки <span class="def-html">(Hypertext Markup Language)</span>. А гипертекст обозначает текст, который отображается на компьютере или другом электронном устройстве со ссылками на другой текст, к которому пользователь может получить доступ, нажимая клавишу или щёлкнув мышью. Однако, гипертекст может содержать не только текст, но и таблицы, списки, формы, изображения, а также и другие элементы представления информации. Языки разметки используют наборы тегов разметки для характеристики текстовых элементов в документе, которые дают веб-браузерам инструкции о том, как должен выглядеть документ.</p>
+        </div>
+    </section>
+
+    <!----------- History ----------->
+
+    <section class="content2">
+        <div class="html-history">
+            <h1>Краткий экскурс в историю HTML</h1>
+        </div>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1991</div>
+                <div class="timeline-content">
+                    <h3>"HTML Tags"</h3>
+                    <p class="timeline">Тим Бёрнерс-Ли, знаменитый британский учёный, изобретатель Всемирной паутины, создал документ, названный <span class="def-tags">"HTML Tags"</span>, в котором предложил около 18 элементов, для придания странице самого простого и лаконичного дизайна. </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1993</div>
+                <div class="timeline-content">
+                    <h3>HTML 1.0</h3>
+                    <p class="timeline">В этом году HTML 1.0 был впервые выпущен для разработчиков. Вся разметка текста была чисто логической. В этой версии были только основные теги, такие как текст, даже таблицы и шрифты в этой версии были недоступны.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1995</div>
+                <div class="timeline-content">
+                    <h3>HTML 2.0</h3>
+                    <p class="timeline">Первым официальным стандартом языка стал HTML 2.0, созданный W3C <span class="def-w3c">(World Wide Web Consortium)</span>. Многие элементы в этой спецификации были заимствованы из существующих реализаций. А единственным серьёзным усовершенствованием в HTML 2.0 стала форма для отсылки информации с компьютера пользователя на сервер. В этом же году вышел HTML 3.0.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1997</div>
+                <div class="timeline-content">
+                    <h3>HTML 3.2</h3>
+                    <p class="timeline">Третья версия языка разметки гипертекста получила поддержку таблиц, математических формул, gif-изображений, а также обтекания изображений текстом. А что самое главное, в эту версию была включена поддержка каскадных таблиц стилей CSS <span class="def-css">(Cascading  Style Sheets)</span> для оформления веб-страницы, что позволило отделить структуру документа от его макета.  И в этом же году вышел HTML 4.0, в которой разработчики произвели очистку стандарта, отказавшись от ряда устаревших элементов, вместо которых рекомендовались к использованию таблицы стилей CSS. </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1999</div>
+                <div class="timeline-content">
+                    <h3>HTML 4.01</h3>
+                    <p class="timeline">В этой версии включилась поддержка большого количества опций мультимедиа, языков скриптов, каскадных таблиц стилей. После выпуска HTML 4.01 в течение многих лет не выпускалось ни одной новой версии HTML, потому что рабочая группа W3C по HTML была занята созданием языка XHTML.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2014</div>
+                <div class="timeline-content">
+                    <h3>HTML 5</h3>
+                    <p class="timeline">На сегодняшний день HTML5 — это <span class="def-cool">самое масштабное обновление HTML!</span> В этой версии были реализованы возможности для упрощённого создания и управления мультимедийным контентом и графическими элементами без внешних плагинов. Также включилась поддержка формата SVG и обратная совместимость с предыдущими версиями языка. А ещё разметка этой версии получила ряд новых семантических тегов, что сделало содержимое страниц более структурированным.</p>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <!----------- New Elements ----------->
+    
+    <section class="content3">
+        <div class="elements">
+            <h1 id="new_elements">Новые элементы!</h1>
+            <p>Теперь настало время ознакомиться с новыми элементами HTML5 и примерами их использования.</p>
+        </div>     
+        <div class="row 1">
+            <div class="elements-col">
+                <div class="icon">
+                    <a href="index3(Графика).html"><img src="images/graphics.png"  alt="Иконка_графики" ></a>
+                </div>
+                <h3>Графика</h3>
+                <p class="colelements">Были добавлены следующие теги для графики: <a href="index3(Графика).html#tag_canvas"><span class="tags">&ltcanvas&gt</span></a>; <a href="index3(Графика).html#tag_svg"><span class="tags">&ltsvg&gt</span></a>.</p>
+                <hr>
+                <p class="hiden">для перехода к началу тегов, нажмите на иконку, к конкретному тегу — на тег</p>
+            </div>
+            <div class="elements-col">
+                <div class="icon">
+                    <a href="index2(Семантика).html"><img src="images/semantics.png"  alt="Иконка_семантики"></a>
+                </div>
+                <h3>Семантика</h3>
+                <p class="colelements">Были добавлены следующие семантические теги: <a href="index2(Семантика).html#tag_article"><span class="tags">&ltarticle&gt</span></a>; <a href="index2(Семантика).html#tag_aside"><span class="tags">&ltaside&gt</span></a>; <a href="index2(Семантика).html#tag_bdi"><span class="tags">&ltbdi&gt</span></a>;  <a href="index2(Семантика).html#tag_figcaption"><span class="tags">&ltfigcaption&gt</span></a>; <a href="index2(Семантика).html#tag_figure"><span class="tags">&ltfigure&gt</span></a>;  <a href="index2(Семантика).html#tag_footer"><span class="tags">&ltfooter&gt</span></a>;  <a href="index2(Семантика).html#tag_header"><span class="tags">&ltheader&gt</span></a>; <a href="index2(Семантика).html#tag_main"><span class="tags">&ltmain&gt</span></a>; <a href="index2(Семантика).html#tag_mark"><span class="tags">&ltmark&gt</span></a>; <a href="index2(Семантика).html#tag_nav"><span class="tags">&ltnav&gt</span></a>; <a href="index2(Семантика).html#tag_section"><span class="tags">&ltsection&gt</span></a>; <a href="index2(Семантика).html#tag_time"><span class="tags">&lttime&gt</span></a>; <a href="index2(Семантика).html#tag_wbr"><span class="tags">&ltwbr&gt</span></a>.</p>
+                <hr>
+                <p class="hiden">для перехода к началу тегов, нажмите на иконку, к конкретному тегу — на тег</p>
+            </div>
+            <div class="elements-col">
+                <div class="icon">
+                    <a href="index4(Интерактивность).html"><img src="images/interactions.png"  alt="Иконка_интерактивного_контента"></a>
+                </div>
+                <h3>Интерактивность</h3>
+                <p class="colelements">Были добавлены следующие теги для интерактивного контента: <a href="index4(Интерактивность).html#tag_details"><span class="tags">&ltdetails&gt</span></a>; <a href="index4(Интерактивность).html#tag_dialog"><span class="tags">&ltdialog&gt</span></a>; <a href="index4(Интерактивность).html#tag_summary"><span class="tags">&ltsummary&gt</span></a>.</p>
+                <hr>
+                <p class="hiden">для перехода к началу тегов, нажмите на иконку, к конкретному тегу — на тег</p>
+            </div>
+        </div>
+        <div class="row 2">
+            <div class="elements-col">
+                <div class="icon">
+                    <a href="index5(Мультимедиа).html"><img src="images/multimedia.png"  alt="Иконка_мультимедиа_контента"></a>
+                </div>
+                <h3>Мультимедиа</h3>
+                <p class="colelements">Были добавлены следующие теги для медиа элементов: <a href="index5(Мультимедиа).html#tag_audio"><span class="tags">&ltaudio&gt</span></a>; <a href="index5(Мультимедиа).html#tag_embed"><span class="tags">&ltembed&gt</span></a>; <a href="index5(Мультимедиа).html#tag_source"><span class="tags">&ltsource&gt</span></a>;  <a href="index5(Мультимедиа).html#tag_track"><span class="tags">&lttrack&gt</span></a>; <a href="index5(Мультимедиа).html#tag_video"><span class="tags">&ltvideo&gt</span></a>.</p>
+                <hr>
+                <p class="hiden">для перехода к началу тегов, нажмите на иконку, к конкретному тегу — на тег</p>
+            </div>
+            <div class="elements-col">
+                <div class="icon">
+                    <a href="index7(Аннотация_Ruby).html"><img src="images/ruby.png"  alt=""></a>
+                </div>
+                <h3>Аннотация Ruby</h3>
+                <p class="colelements">Были добавлены следующие теги для аннотации: <a href="index7(Аннотация_Ruby).html#tag_rp"><span class="tags">&ltrp&gt</span></a>; <a href="index7(Аннотация_Ruby).html#tag_rt"><span class="tags">&ltrt&gt</span></a>; <a href="index7(Аннотация_Ruby).html#tag_ruby"><span class="tags">&ltruby&gt</span></a>.</p>
+                <hr>
+                <p class="hiden">для перехода к началу тегов, нажмите на иконку, к конкретному тегу — на тег</p>
+            </div>
+            <div class="elements-col">
+                <div class="icon">
+                    <a href="index6(Элементы_формы).html"><img src="images/forms.png"  alt="Иконка_формы"></a>
+                </div>
+                <h3>Элементы формы</h3>
+                <p class="colelements">Были добавлены следующие теги для контента форм: <a href="index6(Элементы_формы).html#tag_datalist"><span class="tags">&ltdatalist&gt</span></a>; <a href="index6(Элементы_формы).html#tag_keygen"><span class="tags">&ltkeygen&gt</span></a>; <a href="index6(Элементы_формы).html#tag_meter"><span class="tags">&ltmeter&gt</span></a>; <a href="index6(Элементы_формы).html#tag_output"><span class="tags">&ltoutput&gt</span></a>; <a href="index6(Элементы_формы).html#tag_progress"><span class="tags">&ltprogress&gt</span></a>.</p>
+                <hr>
+                <p class="hiden">для перехода к началу тегов, нажмите на иконку, к конкретному тегу — на тег</p>
+            </div>
+        </div>
+    </section>
+
+    <!----------- Famous person quote ----------->
+
+    <section class="content4">
+        <div class="special_block">
+            <div class="block-for-image">
+                <div class="Jobs">
+                    <img src="images/Jobs.png" alt="Стив_Джобс"/>
+                </div>
+            </div>
+            <div class="block-for-quote">            
+                <div class="quote">HTML5 lets web developers create advanced graphics, typography, animations and transitions without relying on third party browser plug-ins.</div>
+                <cite class="cite"><br>- Стив Джобс, один из основателей Apple</cite>
+            </div>
+        </div>
+    </section>
+
+    <!----------- Footer ----------->
+
+    <section class="footer">
+        
+        <div class="colcol-1">
+            <a href="#new_elements"><h3>Новые элементы</h3></a>
+                <a href="index2(Семантика).html">Семантика</a>
+                <a href="index3(Графика).html">Графика</a>
+                <a href="index4(Интерактивность).html">Интерактивность</a>
+                <a href="index5(Мультимедиа).html">Мультимедиа</a>
+                <a href="index6(Элементы_формы).html">Элементы формы</a>
+                <a href="index7(Аннотация_Ruby).html">Аннотация Ruby</a>
+        </div>  
+        <div class="colcol-2">
+            Терпение и труд всё перетрут! <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+        </div>
+        <div>
+            <a href="index.html"><img src="images/logofooter.png" alt="Лого"></a>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

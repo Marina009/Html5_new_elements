@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5. Новые элементы_Семантика</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+
+    <!----Highlight JS---->
+    <link rel="stylesheet" href="./styles/felipec.min.css">
+    <script src="./highlight.min.js"></script>
+    <script src="./numbers/highlightjs-line-numbers.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script>hljs.initLineNumbersOnLoad();</script>
+    <script>hljs.highlightAll();</script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <button id="back-to-top-button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+    <section class="header2">
+        <nav class="nav2">
+            <a href="index.html"><img src="images/logo.png" alt="Логотип"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Главная</a>
+                        <li>
+                            <a href="index.html#new_elements">Новые элементы</a>  
+                        </li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-title" >
+        <h1>Семантика</h1>
+    </div>   
+    </section>
+
+    <!----------- Semantics Definition ----------->
+
+    <section class="content1">
+        <div class="html-definition">
+            <h1>Вступление</h1>
+            <p>Основная характеристика семантического элемента заключается в том, что он чётко передаёт своё значение, как разработчику, так и браузеру. Благодаря семантическому тегу содержимое тегов и их роль чётко указаны. И именно эта явная информация помогает браузерам лучше понять, какой контент важен, какой является дочерним, какой предназначен для навигациии и тому подобное.</p>
+            <p><br>Следует отметить, что те сайты, которые были сделаны до HTML5 и не обновлялись, поисковые системы пропускают, а посетители таких сайтов характеризуют их трудными для чтения.</p>
+            <p><br>А в HTML5, что является большим плюсом, были добавлены теги, которые делают HTML более понятным за счёт лучшего определения различных разделов и макета веб-страниц, что делает веб-страницы более информативными и адаптируемыми, позволяя браузерам и поисковым системам лучше интерпретировать контент. </p>
+            <p><br><br>Перейдём же теперь непосредственно к самим семантическим тегам!</p>
+        </div>
+    </section>
+
+    <!----------- Tag Header ----------->
+
+    <section class="tagsodd">
+        <div class="html-tag">
+            <h1 id="tag_header">Тег <span class="tags2">&ltheader&gt</span></h1>
+        </div>
+        <div class="block-page1">
+            
+            <div class="block-for-tag-image">
+                <div class="tag-image">
+                    <img src="images/headertag_image.png" alt=""/>
+                </div>
+            </div>
+            <div class="block-for-tag-description_odd">
+                <h1>Синтаксис:</h1>
+                <p>&ltheader&gt...&lt/header&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Представляет информацию, которая находится в начале раздела, чаще всего это заголовок. Элемент header также может включать логотип сайта, навигационные ссылки, форму для поиска и т.п.</p><br>
+                <h1>Разрешённый контент тега:</h1>
+                <p>Потоковый контент, но <i class="fa fa-hand-pointer-o" aria-hidden="true"></i> не может включать элементы header и footer.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltbody>
+    &ltheader>
+        &lth1>SimpleLearning&lt/h1>
+            &ltnav>
+                &ltp>
+                   &lta> href="#">Главная&lt/a> | 
+                   &lta> href="#">Новые элементы&lt/a> | 
+                &lt/p>
+            &lt/nav>
+    &lt/header>
+&lt/body>
+            </code>
+        </pre>
+        <div class="html-tag-result">
+            <h1>Результат</h1>
+            <img src="images/headertag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Footer ----------->
+
+    <section class="tagseven">
+        <div class="html-tag">
+            <h1 id="tag_footer">Тег <span class="tags2">&ltfooter&gt</span></h1>
+        </div>
+        <div class="block-page1">          
+            <div class="block-for-tag-image">
+                <div class="tag-image">
+                    <img src="images/footertag_image.png" alt=""/>
+                </div>
+            </div>
+            <div class="block-for-tag-description_even">
+                <h1>Синтаксис:</h1>
+                <p>&ltfooter&gt...&lt/footer&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Задаёт "подвал" веб-страницы или блока, соответственно, находится в нижней части документа. Обычно содержит контактную информацию, данные об авторских правах, навигационные ссылки.</p>
+                <p><i class="fa fa-exclamation" aria-hidden="true"></i> Важно помнить, что &ltfooter> связан со своим родительским элементом. Если внутри элемента &ltarticle>, то это нижний тег этой статьи. Если это последний элемент внутри элемента &ltbody>, то это нижний тег страницы в целом. </p><br>
+                <h1>Разрешённый контент тега:</h1>
+                <p>Потоковый контент, но <i class="fa fa-hand-pointer-o" aria-hidden="true"></i> не может включать элементы header, footer, main.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+<code class="tagscode">&ltp>На этом статья заканчивается>&lt/p>
+&ltfooter>Copyright &copy; 2022 SimpleLearning&lt/footer></code>
+        </pre>
+        <div class="html-tag-result">
+            <h1>Результат</h1>
+            <img src="images/footertag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Nav ------------->
+
+    <section class="tagsodd">
+        <div class="html-tag">
+            <h1 id="tag_nav">Тег <span class="tags2">&ltnav&gt</span></h1>
+        </div>
+        <div class="block-page1">     
+            <div class="block-for-tag-image">
+                <div class="tag-image">
+                    <img src="images/navtag_image.png" alt=""/>
+                </div>
+            </div>
+            <div class="block-for-tag-description_odd">
+                <h1>Синтаксис:</h1>
+                <p>&ltnav&gt...&lt/nav&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Представляет раздел документа, который предназначается для навигации. В качестве ссылок, находящихся внутри тега &ltnav> могут выступать ссылки, как на другие области внутри текущего документа, так и на другие документы.</p><br>
+                <p><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Нет никакой необходимости размещать все ссылки внутри элемента &ltnav>, так как он предназначен по большей части для основного блока навигационных ссылок. Элемент &ltnav> обычно заменяет оператор &ltdiv class="nav">, который часто используется в HTML.</p><br>
+                <h1>Разрешённый контент тега:</h1>
+                <p>Потоковый контент, но <i class="fa fa-hand-pointer-o" aria-hidden="true"></i> не может включать элементы main.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltnav>
+    &ltul>
+        &ltli>&lta href="#">Главная&lt/li>&lta>
+        &ltli>&lta href="#">О нас&lt/li>&lta>
+    &lt/ul>
+&lt/nav>
+            </code>
+        </pre>
+        <div class="html-tag-result">
+            <h1>Результат</h1>
+            <img src="images/navtag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Aside ------------->
+
+    <section class="tagseven">
+        <div class="html-tag">
+            <h1 id="tag_aside">Тег <span class="tags2">&ltaside&gt</span></h1>
+        </div>
+        <div class="block-page1">     
+            <div class="block-for-tag-image">
+                <div class="tag-image">
+                    <img src="images/asidetag_image.png" alt=""/>
+                </div>
+            </div>
+            <div class="block-for-tag-description_even">
+                <h1>Синтаксис:</h1>
+                <p>&ltaside&gt...&lt/aside&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Применяется для представления контента, который косвенно связан с окружающей его статьёй, разделом или другим контентом, но не является его неотъемлемой частью. Контент элемента &ltaside> подразумевает под собой списки ссылок, рекламу, цитаты и обычно представлен, как текст во врезках. Чаще всего такой блок называют сайдбаром или боковой панелью. </p>
+                <h1>Разрешённый контент тега:</h1>
+                <p>Потоковый контент, <i class="fa fa-hand-pointer-o" aria-hidden="true"></i> без потомков элемента main.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&lth1>6 простых правил хорошего alt-текста&lt/h1>
+&ltp>Давайте поговорим о том, как написать хорошее описание фотографий 
+в атрибуте alt.&lt/p>
+&ltaside>
+    &lth1>Внимание! Реклама!&lt/h1>
+    &ltp>Две книги по цене одной!&lt/p>
+&lt/aside>
+            </code>
+        </pre>
+        <div class="html-tag-result_big_image">
+            <h1>Результат</h1>
+            <img src="images/aside_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Section ------------->
+
+    <section class="tagsodd">
+        <div class="html-tag">
+            <h1 id="tag_section">Тег <span class="tags2">&ltsection&gt</span></h1>
+        </div>
+        <div class="block-page1">         
+            <div class="block-for-tag-image">
+                <div class="tag-image">
+                    <img src="images/sectiontag_image.png" alt=""/>
+                </div>
+            </div>
+            <div class="block-for-tag-description_odd">
+                <h1>Синтаксис:</h1>
+                <p>&ltsection&gt...&lt/section&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Представляет собой раздел веб-страницы, то есть тематическую группировку содержимого документа, как правило, с собственным заголовком. </p><br>
+                <p><i class="fa fa-exclamation" aria-hidden="true"></i> Тег &ltsection> не является универсальным элементом контейнеромон и его желательно применять только для явного разделения документа на разделы, отличающиеся друг от друга по содержанию и смыслу. А если необходимо сгруппировать контент для создания структуры страницы, в таком случае рекомендуется использовать тег &ltdiv>.</p><br>
+                <h1>Разрешённый контент тега:</h1>
+                <p>Потоковый контент.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltsection>
+    &lth1>Вступление&lt/h1>
+    &ltp>Дорогие пользователи, добро пожаловать на наш сайт!&lt/p>
+&lt/section>
+            </code>
+        </pre>
+        <div class="html-tag-result">
+            <h1>Результат</h1>
+            <img src="images/sectiontag_result.png" alt=""/>
+        </div>
+    </section>
+
+        <!----------- Tag Article ------------->
+
+    <section class="tagseven">
+        <div class="html-tag">
+            <h1 id="tag_article">Тег <span class="tags2">&ltarticle&gt</span></h1>
+        </div>
+        <div class="block-page1">           
+            <div class="block-for-tag-image">
+                <div class="tag-image">
+                    <img src="images/articletag_image.png" alt=""/>
+                </div>
+            </div>
+            <div class="block-for-tag-description_even">
+                <h1>Синтаксис:</h1>
+                <p>&ltarticle&gt...&lt/article&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Представляет собой раздел содержимого, который образует независимую часть документа, например, статью, запись в блоге, пользовательский комментарий или другую независимую часть контента. Под независимой частью подразумевается, что содержимое тега &ltarticle> может быть автономным, например, в синдикации.  </p>
+                <h1>Разрешённый контент тега:</h1>
+                <p>Потоковый контент, <i class="fa fa-hand-pointer-o" aria-hidden="true"></i> без потомков элемента main.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltarticle>
+    &lth1>Программы для геймдева&lt/h1>
+    &ltp>Зачастую, чтоб создать хорошую и качественную игру - надо 
+    использовать множество программ для графики, программирования, 
+    эффектов, планирования, звуков и всего прочего.&lt/p>
+&lt/article>
+            </code>
+        </pre>
+        <div class="html-tag-result_big_image">
+            <h1>Результат</h1>
+            <img src="images/articletag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Between Elements ------------->
+
+    <section class="between_elements">
+        <div class="between-elements-text">
+            <p>после того, как мы рассмотрели семантические элементы, касающиеся структурирования разделов документа, а именно теги: &ltheader>,  &ltfooter>,  &ltnav>,  &ltaside>,  &ltsection>, &ltarticle>, перейдём к семантическим элементам группировки содержимого страниц: &ltfigure>, &ltfigcaption>, &ltmain>.</p>
+        </div>
+    </section>
+
+    <!----------- Tag Figure ------------->
+
+    <section class="tagslight-without-example">
+        <div class="html-tag">
+            <h1 id="tag_figure">Тег <span class="tags2">&ltfigure&gt</span></h1>
+        </div>
+        <div class="block-page1">           
+            <div class="block-for-tag-description_light-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltfigure&gt...&lt/figure&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Применяется для обозначения контента, иллюстрирующего или поддерживающего<br> определенную идею текста. Может содержать изображение, диаграмму, схему, фрагмент кода, видеоролик, или другое автономное содержимое, которое без труда можно перенести на другую страницу без ущерба для основного контента. <br><br>Пример тега продемонстрирован ниже, в комбинации с тегом &ltfigcaption> <i class="fa fa-arrow-down" aria-hidden="true"></i>. </p><br>
+            </div>
+            <div class="block-for-tag-description_light-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Потоковый контент; <br> <i class="fa fa-exclamation" aria-hidden="true"></i> если внутри пристутсвует элемент &ltfigcaption>, то он обязательно должен быть первым или последним потомком элемента &ltfigure>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!----------- Tag Figcaption ------------->
+
+    <section class="tagsodd">
+        <div class="html-tag">
+            <h1 id="tag_figcaption">Тег <span class="tags2">&ltfigcaption&gt</span></h1>
+        </div>
+        <div class="block-page1">           
+            <div class="block-for-tag-description_dark-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltfigcaption&gt...&lt/figcaption&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Определяет заголовок или подпись, связанные с контентом, размещенным в элементе &ltfigure>, который является его непосредственным родительским элементом. Он должен располагаться в качестве первого или последнего дочернего элемента внутри тега &ltfigure>.</p><br>
+            </div>
+            <div class="block-for-tag-description_dark-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Потоковый контент.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltfigure>
+    &ltimg src="чёрный_квадрат.png" alt="Картина">
+    &ltfigcaption>"Чёрный квадрат", Казимир Малевич&lt/figcaption>
+&lt/figure>
+            </code>
+        </pre>
+        <div class="html-tag-result">
+            <h1>Результат</h1>
+            <img src="images/figcaptiontag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Main ------------->
+
+    <section class="tagseven">
+        <div class="html-tag">
+            <h1 id="tag_main">Тег <span class="tags2">&ltmain&gt</span></h1>
+        </div>
+        <div class="block-page1">          
+            <div class="block-for-tag-description_light-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltmain&gt...&lt/main&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Используется в качестве контейнера для главного и основного содержимого страницы. Содержимое элемента &ltmain> должно состоять из уникального контента, который находится только на данной странице, то есть тег &ltmain> не должен содержать информацию, которая повторяется на других страницах сайта, например: меню, форму поиска, информацию об авторских правах. <br><i class="fa fa-exclamation" aria-hidden="true"></i> Данный элемент не может содержаться в элементах header, footer, nav, aside, article. </p><br>
+            </div>
+            <div class="block-for-tag-description_light-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Потоковый контент.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltheader>Добро пожаловать на наш сайт!&lt/header>
+&ltmain>
+    &lth1>Что такое HTML?&lt/h1>
+    &ltp>HTML — это язык гипертекстовой разметки 
+    (Hypertext Markup Language)&lt/p>
+&lt/main>
+&ltfooter>Copyright &copy; 2022 SimpleLearning&lt/footer>
+            </code>
+        </pre>
+        <div class="html-tag-result_big_image">
+            <h1>Результат</h1>
+            <img src="images/maintag_result.png" alt=""/>
+        </div>
+    </section>
+    
+    <!----------- Between Elements ------------->
+
+    <section class="between_elements">
+        <div class="between-elements-text">
+            <p>а завершают этот раздел новых семантических тегов теги семантики уровня текста, а именно: &ltbdi>,  &ltmark>,  &lttime>,  &ltwbr>. </p>
+        </div>
+    </section>
+
+    <!----------- Tag Bdi ------------->
+    <section class="tagseven">
+        <div class="html-tag">
+            <h1 id="tag_bdi">Тег <span class="tags2">&ltbdi&gt</span></h1>
+        </div>
+        <div class="block-page1">         
+            <div class="block-for-tag-description_light-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltbdi&gt...&lt/bdi&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Расшифровывается, как "bidirectional isolation", что в переводе означает "двунаправленная изоляция". Используется, когда необходимо изолировать часть текста от влияния направления текста родителя, то есть обработать текст, независимо от окружающего его текста. Данный тег особенно полезен, когда веб-сайт динамически вставляет текст и не знает его направленности.<br><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Тег &ltbdi> стоит использовать, если необходимо вывести сгенерированный пользователями контент, например, комментарий или логин, и нет уверенности, в каком направлении будет идти этот текст. Многие языки имеют направление письменности справа налево, к примеру, иврит, арабский или персидский.</p><br>
+            </div>
+            <div class="block-for-tag-description_light-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Фразообразующий контент.</p>
+            </div>
+        </div>        
+        <table class="table">
+        <caption><h1>Атрибуты</h1></caption>
+            <thead>
+                <tr>
+                    <th class="firstcol">Атрибут</th>
+                    <th class="secondcol">Значение</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3" class="firstcol">dir</td>
+                    <td class="secondcol">ltr</td>
+                    <td>Направление чтения текста слева направо</td>
+                </tr>
+                <tr>
+                    <td class="secondcol">rtl</td>
+                    <td>Направление чтения текста справа налево</td>
+                </tr>
+                <tr>
+                    <td>auto</td>
+                    <td>Если значение атрибута dir не указывается, тогда по умолчанию его значением становится auto, что позволяет браузеру определять направление на основе содержимого элемента.</td>
+                </tr>
+            </tbody>
+        </table>    
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltp>Топ активных пользователей сайта:&lt/p>
+&ltol>
+    &ltli>Пользователь &ltbdi>misterfox&lt/bdi>: 25 постов&lt/li>
+    &ltli>Пользователь &ltbdi>إيان&lt/bdi>: 19 постов&lt/li>
+    &ltli>Пользователь &ltbdi>misterfox&lt/bdi>: 13 постов&lt/li>
+&lt/ol>
+            </code>
+        </pre>
+        <div class="html-tag-result-two_images">
+            <h1>Результат</h1>
+            <img src="images/bditag_result.png" alt=""/>
+            <h1>Результат без применения тега</h1>
+            <img src="images/bditag_result2.png" alt=""/>
+        </div>
+        
+    </section>
+   
+     <!----------- Tag Mark ------------->
+
+    <section class="tagsodd">
+        <div class="html-tag">
+            <h1 id="tag_mark">Тег <span class="tags2">&ltmark&gt</span></h1>
+        </div>
+        <div class="block-page1">          
+            <div class="block-for-tag-description_dark-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltmark&gt...&lt/mark&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Выделяет или подсвечивает важный фрагмент текста. Хорошим примером использования этого тега является выделение слова в документе, которое искал пользователь. По умолчанию браузеры добавляют данному тегу жёлтый фоновый цвет.</p><br>
+            </div>
+            <div class="block-for-tag-description_dark-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Фразообразующий контент.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltp>Этот текст не выделен, а &ltmark>этот выделен&lt/mark>&lt/p>
+
+            </code>
+        </pre>
+        <div class="html-tag-result">
+            <h1>Результат</h1>
+            <img src="images/marktag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Tag Time ------------->
+
+    <section class="tagseven">
+        <div class="html-tag">
+            <h1 id="tag_time">Тег <span class="tags2">&lttime&gt</span></h1>
+        </div>
+        <div class="block-page1">           
+            <div class="block-for-tag-description_light-1col">
+                <h1>Синтаксис:</h1>
+                <p>&lttime&gt...&lt/time&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Может указывать отметку времени в 24-часовом формате, определённый период времени или дату в календаре. В содержимом тега находится формат для человека, а в его атрибуте datetime – версия для машин, то есть дата представляется в машиносчитываемом формате, что может быть полезным при планировании событий в пользовательском календаре. Именно это помогает поисковым системам точнее производить результаты поиска.</p><br>
+            </div>
+            <div class="block-for-tag-description_light-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Фразообразующий контент.</p>
+            </div>
+        </div>
+        <table class="table">
+        <caption><h1>Специальные атрибуты</h1></caption>
+            <thead>
+                <tr>
+                    <th class="firstcol">Атрибут</th>
+                    <th class="secondcol">Значение</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="firstcol">datetime</td>
+                    <td class="secondcol">datetime</td>
+                    <td>Используется для обозначения машиносчитываемой даты и времени в элементе time. При использовании данного атрибута, элемент time может быть пустым.<br>Принимает значение формата YYY-MM-DDThh:mm:ssTZD, где:<br>YYYY – год 4 цифры (пример: 2002);<br>MM – месяц (пример: 09);<br>DD – день 2 цифры (пример: 01);<br>T – разделитель даты и времени;<br>hh – часы 2 цифры (пример: 14);<br>mm – минуты 2 цифры (пример: 25);<br>ss – секунды 2 цифры (пример: 10);<br>TZD – часовой пояс (пример: +01:00 для Германии).</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltp>До Нового Года осталось &lttime datetime="205d 3h 12m 22s">
+205 дней, 3 часа, 12 минут, 22 секунды&lt/time>&lt/p>
+            </code>
+        </pre>
+        <div class="html-tag-result_big_image">
+            <h1>Результат</h1>
+            <img src="images/timetag_result.png" alt=""/>
+        </div>       
+    </section>
+
+    <!----------- Tag Wbr ------------->
+
+    <section class="tagsodd">
+        <div class="html-tag">
+            <h1 id="tag_wbr">Тег <span class="tags2">&ltwbr&gt</span></h1>
+        </div>
+        <div class="block-page1">           
+            <div class="block-for-tag-description_dark-1col">
+                <h1>Синтаксис:</h1>
+                <p>&ltwbr/&gt</p><br>
+                <h1>О теге:</h1>
+                <p>Используется, когда необходимо сделать перенос строки, к примеру, если в строке присутствует очень длинное слово.</p><br>
+            </div>
+            <div class="block-for-tag-description_dark-2col">
+                <h1>Разрешённый контент тега:</h1>
+                <p>Пустой. Как можно заметить из синтаксиса, используется только открывающий тег и отсутсвуют какие-либо контенты.</p>
+            </div>
+        </div>
+        <div class="html-tag-example">
+            <h1>Пример применения тега</h1>
+        </div>
+        <pre class="precode">
+            <code class="tagscode">&ltp>Немецкое слово: Rindfleischetikettierungsüberwachungsaufgaben&ltwbr>übertragungsgesetz, что в переводе означает: "Закон о передаче обязанностей по надзору за маркировкой говядины".&lt/p>
+
+            </code>
+        </pre>
+        <div class="html-tag-result_big_image">
+            <h1>Результат</h1>
+            <img src="images/wbrtag_result.png" alt=""/>
+        </div>
+    </section>
+
+    <!----------- Footer ------------->
+
+    <section class="footer2">      
+        <div class="colcol-1">
+            <a href="index.html#new_elements"><h3>Новые элементы</h3></a>
+                <a href="index2(Семантика).html">Семантика</a>
+                <a href="index3(Графика).html">Графика</a>
+                <a href="index4(Интерактивность).html">Интерактивность</a>
+                <a href="index5(Мультимедиа).html">Мультимедиа</a>
+                <a href="index6(Элементы_формы).html">Элементы формы</a>
+                <a href="index7(Аннотация_Ruby).html">Аннотация Ruby</a>
+        </div>  
+        <div class="colcol-2">
+            Терпение и труд всё перетрут! <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+        </div>
+        <div>
+            <a href="index.html"><img src="images/logofooter.png" alt="Лого"></a>
+        </div>
+    </section>
+    
+    <schljs.highlightAll src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></schljs.highlightAll>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+    window.addEventListener("scroll", function() {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
+
+</body>
+</html>
