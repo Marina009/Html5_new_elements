@@ -4,26 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5. Новые элементы_Графика</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
-
-    <!----Highlight JS---->
-    <link rel="stylesheet" href="./styles/felipec.min.css">
-    <script src="./highlight.min.js"></script>
-    <script src="./numbers/highlightjs-line-numbers.min.js"></script>
-    <script>hljs.highlightAll();</script>
-
-    <script>hljs.initLineNumbersOnLoad();</script>
-    <script>hljs.highlightAll();</script>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HTML5. Интерактивность</title>
 </head>
 <body>
     <button id="back-to-top-button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
@@ -47,7 +31,7 @@
     </div>   
     </section>
 
-    <!----------- Interaction start ------------->
+    <!-- Interaction start -->
 
     <section class="content1">
         <div class="html-definition">
@@ -56,16 +40,16 @@
         </div>
     </section>
 
-    <!----------- Tag Details ------------->
+    <!-- Tag Details -->
 
     <section class="tagsdark">
         <div class="html-tag">
-            <h1 id="tag_details">Тег <span class="tags2">&ltdetails&gt</span></h1>
+            <h1 id="tag_details">Тег <span class="tags2">&lt;details&gt;</span></h1>
         </div>
         <div class="block-page1">         
             <div class="block-for-tag-description_dark-1col">
                 <h1>Синтаксис:</h1>
-                <p>&ltdetails&gt...&lt/details&gt</p><br>
+                <p>&lt;details&gt;...&lt;/details&gt;</p><br>
                 <h1>О теге:</h1>
                 <p>Указывает дополнительную информацию, которую можно скрыть или показать в специальном блоке по требованию пользователя, с помощью клика. Также такой блок ещё называют "аккордеоном". </p><br>
                 <h1>Разрешённый контент тега:</h1>
@@ -95,10 +79,10 @@
             <h1>Пример применения тега</h1>
         </div>
         <pre class="precode">
-            <code class="tagscode">&ltdetails>
-    &ltsummary>Что означает элемент details в HTML?&lt/summary>
-    &ltp>Это блок с раскрывающимся контентом.&lt/p>
-&lt/details>
+            <code class="tagscode">&lt;details>
+    &lt;summary>Что означает элемент details в HTML?&lt;/summary>
+    &lt;p>Это блок с раскрывающимся контентом.&lt;/p>
+&lt;/details>
             </code>
         </pre>
         <div class="html-tag-result-two_images">
@@ -109,35 +93,35 @@
         </div>        
     </section>
  
-    <!----------- Tag Summary ------------->
+    <!-- Tag Summary -->
 
     <section class="tagslight-without-example">
         <div class="html-tag">
-            <h1 id="tag_summary">Тег <span class="tags2">&ltsummary&gt</span></h1>
+            <h1 id="tag_summary">Тег <span class="tags2">&lt;summary&gt;</span></h1>
         </div>
         <div class="block-page1">
             
             <div class="block-for-tag-description_light-1col">
                 <h1>Синтаксис:</h1>
-                <p>&ltsummary&gt...&lt/summary&gt</p><br>
+                <p>&lt;summary&gt;...&lt;/summary&gt;</p><br>
                 <h1>О теге:</h1>
-                <p>Определяет видимый заголовок для элемента &ltdetails>, то есть это его легенда.<br>На заголовок можно нажимать, чтобы просмотреть или скрыть информацию. Данный элемент необязателен — без него в качестве легенды будет написан текст «Подробнее».<br><br>Пример использования этого тега представлен выше, вместе с тегом &ltdetails> <i class="fa fa-arrow-up" aria-hidden="true"></i>.</p><br>
+                <p>Определяет видимый заголовок для элемента &lt;details>, то есть это его легенда.<br>На заголовок можно нажимать, чтобы просмотреть или скрыть информацию. Данный элемент необязателен — без него в качестве легенды будет написан текст «Подробнее».<br><br>Пример использования этого тега представлен выше, вместе с тегом &lt;details> <i class="fa fa-arrow-up" aria-hidden="true"></i>.</p><br>
                 <h1>Разрешённый контент тега:</h1>
                 <p>Фразообразующий контент.</p>
             </div>
         </div>
     </section>
 
-    <!----------- Tag Dialog ------------->
+    <!-- Tag Dialog -->
 
     <section class="tagsdark">
         <div class="html-tag">
-            <h1 id="tag_dialog">Тег <span class="tags2">&ltdialog&gt</span></h1>
+            <h1 id="tag_dialog">Тег <span class="tags2">&lt;dialog&gt;</span></h1>
         </div>
         <div class="block-page1">           
             <div class="block-for-tag-description_dark-1col">
                 <h1>Синтаксис:</h1>
-                <p>&ltdialog&gt...&lt/dialog&gt</p><br>
+                <p>&lt;dialog&gt;...&lt;/dialog&gt;</p><br>
                 <h1>О теге:</h1>
                 <p>Используется для создания диалогового окна или модального окна на веб-странице, с которым пользователь может взаимодействовать для выполнения определённой задачи. Когда dialog открыт, остальная часть страницы неактивна.</p><br>
                 <h1>Разрешённый контент тега:</h1>
@@ -148,14 +132,14 @@
             <h1>Пример применения тега</h1>
         </div>
         <pre class="precode">
-            <code class="tagscode">&ltdiv>
-    &ltdialog id="myFirstDialog">&lt/dialog>
-    &ltp>Добро пожаловать на сайт!&lt/p>
-    &ltbutton id="hide">Закрыть&lt/button>
-    &lt/dialog>
-    &ltbutton id="show">Открыть&lt/button>
-&lt/div>
-    &ltscript type="text/JavaScript">
+            <code class="tagscode">&lt;div>
+    &lt;dialog id="myFirstDialog">&lt;/dialog>
+    &lt;p>Добро пожаловать на сайт!&lt;/p>
+    &lt;button id="hide">Закрыть&lt;/button>
+    &lt;/dialog>
+    &lt;button id="show">Открыть&lt;/button>
+&lt;/div>
+    &lt;script type="text/JavaScript">
     (function() {  
         var dialog = document.getElementById('myFirstDialog');  
         document.getElementById('show').onclick = function() {  
@@ -165,7 +149,7 @@
             dialog.close();  
         };  
     })(); 
-    &lt/script>
+    &lt;/script>
             </code>
         </pre>
         <div class="html-tag-result-two_images">
@@ -176,7 +160,7 @@
         </div>
     </section>
 
-    <!----------- Footer ------------->
+    <!-- Footer -->
 
     <section class="footer4">       
         <div class="colcol-1">
@@ -195,13 +179,21 @@
             <a href="index.html"><img src="images/logofooter.png" alt="Логотип"></a>
         </div>
     </section>
-    <schljs.highlightAll src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></schljs.highlightAll>
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript">
+
+    <script src="script.js"></script>
+    <script>
     window.addEventListener("scroll", function() {
         var nav = document.querySelector("nav");
         nav.classList.toggle("sticky", window.scrollY > 0);
     })
     </script>
+
+    <!-- Highlight JS -->
+    <link rel="stylesheet" href="./styles/felipec.min.css">
+    <script src="./highlight.min.js"></script>
+    <script src="./numbers/highlightjs-line-numbers.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script>hljs.initLineNumbersOnLoad();</script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>    

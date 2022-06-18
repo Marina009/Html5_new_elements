@@ -4,26 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5. Новые элементы_Графика</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
-
-    <!----Highlight JS---->
-    <link rel="stylesheet" href="./styles/felipec.min.css">
-    <script src="./highlight.min.js"></script>
-    <script src="./numbers/highlightjs-line-numbers.min.js"></script>
-    <script>hljs.highlightAll();</script>
-
-    <script>hljs.initLineNumbersOnLoad();</script>
-    <script>hljs.highlightAll();</script>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HTML5. Мультимедиа</title>
 </head>
 <body>
     <button id="back-to-top-button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
@@ -47,7 +31,7 @@
     </div>   
     </section>
 
-    <!----------- Multimedia start ------------->
+    <!-- Multimedia start -->
 
     <section class="content1">
         <div class="html-definition">
@@ -56,18 +40,18 @@
         </div>
     </section>
 
-    <!----------- Tag Video ------------->
+    <!--Tag Video -->
 
     <section class="tagsdark2">
         <div class="html-tag">
-            <h1 id="tag_video">Тег <span class="tags2">&ltvideo&gt</span></h1>
+            <h1 id="tag_video">Тег <span class="tags2">&lt;video&gt;</span></h1>
         </div>
         <div class="block-page1">           
             <div class="block-for-tag-description_dark-1col">
                 <h1>Синтаксис:</h1>
-                <p>&ltvideo&gt...&lt/video&gt</p><br>
+                <p>&lt;video&gt;...&lt;/video&gt;</p><br>
                 <h1>О теге:</h1>
-                <p>Встраивает видео на веб-страницу. Адрес видео задаётся внутри контейнера &ltvideo> с помощью тега &ltsource> или атрибута src. Любой текст внутри элемента &ltvideo> отображается браузером в том случае, когда сам элемент или формат используемого видеофайла не поддерживается браузером.<br><br> Также, если браузер не поддерживает определённый формат видео, можно добавить в тег несколько форматов одного и того же файла. На данный момент для видеоэлемента поддерживаются три основных видеоформата: MP4, Ogg и WebM. </p><br>
+                <p>Встраивает видео на веб-страницу. Адрес видео задаётся внутри контейнера &lt;video> с помощью тега &lt;source> или атрибута src. Любой текст внутри элемента &lt;video> отображается браузером в том случае, когда сам элемент или формат используемого видеофайла не поддерживается браузером.<br><br> Также, если браузер не поддерживает определённый формат видео, можно добавить в тег несколько форматов одного и того же файла. На данный момент для видеоэлемента поддерживаются три основных видеоформата: MP4, Ogg и WebM. </p><br>
                 <h1>Разрешённый контент тега:</h1>
                 <p>Текстовый контент; <i class="fa fa-hand-pointer-o" aria-hidden="true"></i> если данный элемент имеет атрибут src, то ноль или более элементов track; <i class="fa fa-hand-pointer-o" aria-hidden="true"></i> если элемент не имеет атрибута src, то ноль или более элементов source, ноль или более элементов track.</p>
             </div>
@@ -135,9 +119,9 @@
             <h1>Пример применения тега</h1>
         </div>
         <pre class="precode">
-            <code class="tagscode">&ltvideo controls="controls" src="video.mp4" width="320px">
+            <code class="tagscode">&lt;video controls="controls" src="video.mp4" width="320px">
     Ваш браузер не поддерживает это видео.
-&lt/video>
+&lt;/video>
             </code>
         </pre>
         <div class="html-tag-result_big_image">
@@ -146,19 +130,19 @@
         </div>
     </section>
 
-    <!----------- Tag Source ------------->
+    <!-- Tag Source -->
 
     <section class="tagslight3">
         <div class="html-tag">
-            <h1 id="tag_source">Тег <span class="tags2">&ltsource&gt</span></h1>
+            <h1 id="tag_source">Тег <span class="tags2">&lt;source&gt;</span></h1>
         </div>
         <div class="block-page1">
             
             <div class="block-for-tag-description_light-1col">
                 <h1>Синтаксис:</h1>
-                <p>&ltsource/&gt</p><br>
+                <p>&lt;source/&gt;</p><br>
                 <h1>О теге:</h1>
-                <p>Используется внутри элементов audio и video для указания расположения файлов. Также можно использовать несколько элементов &ltsource> для указания нескольких альтернативных аудио/видео файлов, чтобы обозначить, что они доступны в нескольких форматах. Браузер может просматривать список элементов source до тех пор, пока не найдёт формат, который можно воспроизводить.<br><br>Пример данного тега находится ниже, в комбинации с элементом audio <i class="fa fa-arrow-down" aria-hidden="true"></i>.</p><br>
+                <p>Используется внутри элементов audio и video для указания расположения файлов. Также можно использовать несколько элементов &lt;source> для указания нескольких альтернативных аудио/видео файлов, чтобы обозначить, что они доступны в нескольких форматах. Браузер может просматривать список элементов source до тех пор, пока не найдёт формат, который можно воспроизводить.<br><br>Пример данного тега находится ниже, в комбинации с элементом audio <i class="fa fa-arrow-down" aria-hidden="true"></i>.</p><br>
                 <h1>Разрешённый контент тега:</h1>
                 <p>Пустой, так как этот элемент включает только начальный тег и не может содержать какие-либо контенты.</p>
             </div>
@@ -194,18 +178,18 @@
         </div>     
     </section>
 
-    <!----------- Tag Audio ------------->
+    <!-- Tag Audio -->
 
     <section class="tagsdark2">
         <div class="html-tag">
-            <h1 id="tag_audio">Тег <span class="tags2">&ltaudio&gt</span></h1>
+            <h1 id="tag_audio">Тег <span class="tags2">&lt;audio&gt;</span></h1>
         </div>
         <div class="block-page1">           
             <div class="block-for-tag-description_dark-1col">
                 <h1>Синтаксис:</h1>
-                <p>&ltaudio&gt...&lt/audio&gt</p><br>
+                <p>&lt;audio&gt;...&lt;/audio&gt;</p><br>
                 <h1>О теге:</h1>
-                <p>Добавляет на страницу аудиоплеер, который воспроизводит звуковой файл. Можно также  добавить несколько форматов одного файла, чтобы браузер воспроизвёл тот формат, который он поддерживает — для этого нужно добавить вложенные теги &ltsource>.</p><br>
+                <p>Добавляет на страницу аудиоплеер, который воспроизводит звуковой файл. Можно также  добавить несколько форматов одного файла, чтобы браузер воспроизвёл тот формат, который он поддерживает — для этого нужно добавить вложенные теги &lt;source>.</p><br>
                 <h1>Разрешённый контент тега:</h1>
                 <p>Включающий атрибут src либо один или более элементов source, за которыми следует потоковый или фразообразующий контент. Применение элементов video и audio не допускаются.</p>
             </div>
@@ -258,10 +242,10 @@
             <h1>Пример применения тега</h1>
         </div>
         <pre class="precode">
-            <code class="tagscode">&ltaudio controls="controls">
-    &ltsource src="beautiful_song.mp3" type="audio/mp3">
+            <code class="tagscode">&lt;audio controls="controls">
+    &lt;source src="beautiful_song.mp3" type="audio/mp3">
     Ваш браузер не поддерживает эту аудиозапись.
-&lt/audio> 
+&lt;/audio> 
             </code>
         </pre>
         <div class="html-tag-result">
@@ -270,16 +254,16 @@
         </div>
     </section>
 
-    <!----------- Tag Embed ------------->
+    <!-- Tag Embed -->
 
     <section class="tagslight99">
         <div class="html-tag">
-            <h1 id="tag_embed">Тег <span class="tags2">&ltembed&gt</span></h1>
+            <h1 id="tag_embed">Тег <span class="tags2">&lt;embed&gt;</span></h1>
         </div>
         <div class="block-page1">         
             <div class="block-for-tag-description_light-1col">
                 <h1>Синтаксис:</h1>
-                <p>&ltembed/&gt</p><br>
+                <p>&lt;embed/&gt;</p><br>
                 <h1>О теге:</h1>
                 <p>Используется для вставки на страницу контента в сторонних форматах, которые браузер отображает с помощью плагинов. Чаще всего используется для видео- и аудиоконтента.<br><br>Если на компьютере пользователя не установлен нужный для отображения контента плагин, то он увидит в окне предупреждение, например: "Плагин Adobe Flash Player больше не поддерживается".</p><br>
                 <h1>Разрешённый контент тега:</h1>
@@ -324,7 +308,7 @@
             <h1>Пример применения тега</h1>
         </div>
         <pre class="precode">
-            <code class="tagscode">&ltembed src="video3.mov" width="320px" type="video/quicktime">
+            <code class="tagscode">&lt;embed src="video3.mov" width="320px" type="video/quicktime">
 
             </code>
         </pre>
@@ -335,18 +319,18 @@
         
     </section>
 
-    <!----------- Tag Track ------------->
+    <!-- Tag Track -->
 
     <section class="tagsdark2">
         <div class="html-tag">
-            <h1 id="tag_track">Тег <span class="tags2">&lttrack&gt</span></h1>
+            <h1 id="tag_track">Тег <span class="tags2">&lt;track&gt;</span></h1>
         </div>
         <div class="block-page1">         
             <div class="block-for-tag-description_dark-1col">
                 <h1>Синтаксис:</h1>
-                <p>&lttrack/&gt</p><br>
+                <p>&lt;track/&gt;</p><br>
                 <h1>О теге:</h1>
-                <p>Используется в качестве дочернего элемента для тегов &ltaudio> и &ltvideo> для указания субтитров, заголовка файла или других файлов, содержащих текст, которые должны быть видны при воспроизведении.</p><br>
+                <p>Используется в качестве дочернего элемента для тегов &lt;audio> и &lt;video> для указания субтитров, заголовка файла или других файлов, содержащих текст, которые должны быть видны при воспроизведении.</p><br>
                 <h1>Разрешённый контент тега:</h1>
                 <p>Пустой, так как этот элемент включает только начальный тег и не может содержать какие-либо контенты.</p>
             </div>
@@ -394,9 +378,9 @@
             <h1>Пример применения тега</h1>
         </div>
         <pre class="precode">
-            <code class="tagscode">&ltvideo controls="controls" src="video.mp4" width="320px">
-    &lttrack src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
-&lt/video>
+            <code class="tagscode">&lt;video controls="controls" src="video.mp4" width="320px">
+    &lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+&lt;/video>
             </code>
         </pre>
         <div class="html-tag-result">
@@ -405,7 +389,7 @@
         </div>
     </section>
    
-    <!----------- Footer ------------->
+    <!-- Footer -->
 
     <section class="footer5">      
         <div class="colcol-1">
@@ -425,13 +409,21 @@
         </div>
     </section>
 
-    <schljs.highlightAll src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></schljs.highlightAll>
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript">
+    <script src="script.js"></script>
+    <script>
     window.addEventListener("scroll", function() {
         var nav = document.querySelector("nav");
         nav.classList.toggle("sticky", window.scrollY > 0);
     })
     </script>
+
+    <!-- Highlight JS -->
+
+    <link rel="stylesheet" href="./styles/felipec.min.css">
+    <script src="./highlight.min.js"></script>
+    <script src="./numbers/highlightjs-line-numbers.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script>hljs.initLineNumbersOnLoad();</script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>    

@@ -947,8 +947,6 @@ p {
     align-items: center;
 }
 
-
-
 @media (max-width: 1170px) {
     .block-page1 {   
         flex-direction: column;
@@ -1047,7 +1045,6 @@ p {
     margin-top: 10px;   
 }
 
-
 .html-tag-result img {
     margin-top: 20px;  
     margin-bottom: 130px;
@@ -1134,7 +1131,6 @@ p {
     font-size: 36px;
 }
 
-
 .between-elements-text::before {
     content: url(images/line2.png); 
     display: inline-block;
@@ -1152,7 +1148,6 @@ p {
         content: url(images/line2_small-size.png); 
     }
 }
-
 
 /*----------- Tags Figure Figcaption Main-------------*/
 .block-page1:nth-of-type(2) {
@@ -1308,7 +1303,7 @@ p {
     padding-bottom: 130px;
 }
 
-    .block-for-tag-description_dark-2col, .block-for-tag-description_light-2col {
+.block-for-tag-description_dark-2col, .block-for-tag-description_light-2col {
     flex-basis: 600px;
 }
 
@@ -1348,7 +1343,6 @@ p {
 
 @media (max-width: 1170px) {
 
-
     .block-for-tag-description_dark-1col h1, p,  .block-for-tag-description_dark-2col h1, p {
         text-align: center;
     }  
@@ -1363,7 +1357,6 @@ p {
     .block-for-tag-description_light-1col,  .block-for-tag-description_light-2col {
         flex-basis: 10px;
     }
-
 }
 
 @media (max-width: 700px) {
@@ -1433,7 +1426,6 @@ p {
         text-decoration-thickness: 5px;
         font-size: 48px;
     }
-
 
 /*----------- Tags Bdi Mark Time Wbr -------------*/
 .tagsodd-level {
@@ -1507,10 +1499,7 @@ p {
     text-align: center;
     font-size: 24px;
     border-collapse: collapse;
-
-
 }
-
 
 caption {
     margin-bottom: 20px;
@@ -1536,40 +1525,6 @@ caption {
 	background: #F7F7F7;
 }
 
-/*.table td:first-child{
-    width: 30%;
-
-}
-
-.firstcol {
-    width: 14%;
-}
-
-.secondcol {
-    width: 14%;
-}
-
-/*@media (max-width: 1100px) {
-    .table {
-        font-size: 15px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 520px) {
-    .table {
-        font-size: 10px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 410px) {
-    .table {
-        font-size: 10px;
-        min-width: 410px;
-    }
-}*/
-
 .html-tag-result-two_images {
     display: block;
     position: relative;
@@ -1592,8 +1547,7 @@ caption {
 @media (max-width: 590px) {
     .html-tag-result-two_images img {
         width: 330px;
-    }
-    
+    }   
 }
 
 /*----------- Footer Page2 -------------*/
@@ -1768,7 +1722,6 @@ caption {
     }
 }
 
-
 /*---------- Footer For Fifth Page ----------------*/
 .footer5 {
     padding-top: 50px;
@@ -1796,10 +1749,6 @@ caption {
     font-size: 24px;
     border-collapse: collapse;
 }
-
-/*.table2 caption {
-    min-width: none;
-}*/
 
 caption {
     margin-bottom: 20px;
@@ -1833,39 +1782,6 @@ caption {
 
 
 
-/*.table2 td:first-child{
-    width: 30%;
-}
-
-.firstcol {
-    width: 14%;
-}
-
-.secondcol {
-    width: 14%;
-}
-
-/*@media (max-width: 1100px) {
-    .table2 {
-        font-size: 15px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 520px) {
-    .table2 {
-        font-size: 10px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 410px) {
-    .table2 {
-        font-size: 10px;
-        min-width: 410px;
-    }
-} */
-
 .html-tag-result-two_images {
     display: block;
     position: relative;
@@ -1896,7 +1812,6 @@ caption {
     .html-tag-result-two_images img{
         width: 300px;
     }
-
 }
 
 /*---------- Header for Sixth Page About Form Elements ----------------*/

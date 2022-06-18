@@ -4,26 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5. Новые элементы_Графика</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
-
-    <!----Highlight JS---->
-    <link rel="stylesheet" href="./styles/felipec.min.css">
-    <script src="./highlight.min.js"></script>
-    <script src="./numbers/highlightjs-line-numbers.min.js"></script>
-    <script>hljs.highlightAll();</script>
-
-    <script>hljs.initLineNumbersOnLoad();</script>
-    <script>hljs.highlightAll();</script>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HTML5. Аннотация Ruby</title>
 </head>
 <body>
     <button id="back-to-top-button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
@@ -47,7 +31,7 @@
     </div>   
     </section>
 
-    <!----------- Ruby start ------------->
+    <!-- Ruby start -->
 
     <section class="content1">
         <div class="html-definition">
@@ -56,19 +40,19 @@
         </div>
     </section>
 
-    <!----------- Tag Meter ------------->
+    <!-- Tag Meter -->
 
     <section class="tagsdark5">
         <div class="html-tag">
-            <h1 id="tag_ruby">Тег <span class="tags2">&ltruby&gt</span></h1>
+            <h1 id="tag_ruby">Тег <span class="tags2">&lt;ruby&gt;</span></h1>
         </div>
         <div class="block-page1">
             
             <div class="block-for-tag-description_dark-1col">
                 <h1>Синтаксис:</h1>
-                <p>&ltruby&gt...&lt/ruby&gt</p><br>
+                <p>&lt;ruby&gt;...&lt;/ruby&gt;</p><br>
                 <h1>О теге:</h1>
-                <p>Представляет аннотацию Ruby. Используется тогда, когда необходимо продемонстрировать, как произносятся восточноазиатские иероглифы. Предоставляет подсказки по чтению текста, краткие руководства по произношению и другие примечания. Используется вместе с тегом &ltrt> и необязательным тегом &ltrp>, которые описаны чуть ниже <i class="fa fa-arrow-down" aria-hidden="true"></i>.</p><br>
+                <p>Представляет аннотацию Ruby. Используется тогда, когда необходимо продемонстрировать, как произносятся восточноазиатские иероглифы. Предоставляет подсказки по чтению текста, краткие руководства по произношению и другие примечания. Используется вместе с тегом &lt;rt> и необязательным тегом &lt;rp>, которые описаны чуть ниже <i class="fa fa-arrow-down" aria-hidden="true"></i>.</p><br>
                 <h1>Разрешённый контент тега:</h1>
                 <p>Фразообразующий контент. Не может включать элементы ruby. Может также содержать один или несколько элементов rt, в том числе с элементами rp перед элементом rt и после него.</p>
             </div>
@@ -77,10 +61,10 @@
             <h1>Пример применения тега</h1>
         </div>
         <pre class="precode">
-            <code class="tagscode">&ltruby>
-    日 &ltrp>(&lt/rp>&ltrt>Rì&lt/rt>&ltrp>)&lt/rp>
-    出 &ltrp>(&lt/rp>&ltrt>chū&lt/rt>&ltrp>)&lt/rp>
-&lt/ruby>
+            <code class="tagscode">&lt;ruby>
+    日 &lt;rp>(&lt;/rp>&lt;rt>Rì&lt;/rt>&lt;rp>)&lt;/rp>
+    出 &lt;rp>(&lt;/rp>&lt;rt>chū&lt;/rt>&lt;rp>)&lt;/rp>
+&lt;/ruby>
             </code>
         </pre>
         <div class="html-tag-result">
@@ -89,43 +73,43 @@
         </div>
     </section>
 
-    <!----------- Tag Rt ------------->
+    <!-- Tag Rt -->
 
     <section class="tagslight5-without-example">
         <div class="html-tag">
-            <h1 id="tag_rt">Тег <span class="tags2">&ltrt&gt</span></h1>
+            <h1 id="tag_rt">Тег <span class="tags2">&lt;rt&gt;</span></h1>
         </div>
         <div class="block-page1">            
             <div class="block-for-tag-description_light-1col">
                 <h1>Синтаксис:</h1>
-                <p>&ltrt&gt...&lt/rt&gt</p><br>
+                <p>&lt;rt&gt;...&lt;/rt&gt;</p><br>
                 <h1>О теге:</h1>
-                <p>Используется внутри элемента ruby и добавляет аннотацию в виде текста меньшего размера сверху от восточноазиатских символов, кассающуюся их произношения.<br><br>Пример данного тега продемонстрирован чуть выше, в комбинации с основным элементом &ltruby> и необязательным элементом &ltrp> <i class="fa fa-arrow-up" aria-hidden="true"></i>.</p><br>
+                <p>Используется внутри элемента ruby и добавляет аннотацию в виде текста меньшего размера сверху от восточноазиатских символов, кассающуюся их произношения.<br><br>Пример данного тега продемонстрирован чуть выше, в комбинации с основным элементом &lt;ruby> и необязательным элементом &lt;rp> <i class="fa fa-arrow-up" aria-hidden="true"></i>.</p><br>
                 <h1>Разрешённый контент тега:</h1>
                 <p>Фразообразующий контент.</p>
             </div>
         </div>
     </section>
 
-    <!----------- Tag Rp ------------->
+    <!-- Tag Rp -->
 
     <section class="tagsdark5-without-example">
         <div class="html-tag">
-            <h1 id="tag_rp">Тег <span class="tags2">&ltrp&gt</span></h1>
+            <h1 id="tag_rp">Тег <span class="tags2">&lt;rp&gt;</span></h1>
         </div>
         <div class="block-page1">           
             <div class="block-for-tag-description_dark-1col">
                 <h1>Синтаксис:</h1>
-                <p>&ltrp&gt...&lt/rp&gt</p><br>
+                <p>&lt;rp&gt;...&lt;/rp&gt;</p><br>
                 <h1>О теге:</h1>
-                <p>Используется внутри элемента ruby, для отображения круглых скобок, в которых находится текст Ruby, обозначающий произношение восточноазиатского символа. В браузерах, которые поддерживают тег &ltruby>, эти круглые скобки не показываются и произношение символа выводится без них над основным текстом. А в неподдерживающих браузерах произношение отображается в круглых скобках.<br><br>Пример данного тега находится выше, в комбинации с элементами &ltruby> и &ltrt> <i class="fa fa-arrow-up" aria-hidden="true"></i>. </p><br>
+                <p>Используется внутри элемента ruby, для отображения круглых скобок, в которых находится текст Ruby, обозначающий произношение восточноазиатского символа. В браузерах, которые поддерживают тег &lt;ruby>, эти круглые скобки не показываются и произношение символа выводится без них над основным текстом. А в неподдерживающих браузерах произношение отображается в круглых скобках.<br><br>Пример данного тега находится выше, в комбинации с элементами &lt;ruby> и &lt;rt> <i class="fa fa-arrow-up" aria-hidden="true"></i>. </p><br>
                 <h1>Разрешённый контент тега:</h1>
                 <p>Фразообразующий контент.</p>
             </div>
         </div>
     </section>
 
-    <!----------- Footer ------------->
+    <!-- Footer -->
 
     <section class="footer7">      
         <div class="colcol-1">
@@ -145,13 +129,22 @@
         </div>
     </section>
 
-    <schljs.highlightAll src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></schljs.highlightAll>
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript">
+    <script src="script.js"></script>
+    <script>
     window.addEventListener("scroll", function() {
         var nav = document.querySelector("nav");
         nav.classList.toggle("sticky", window.scrollY > 0);
     })
     </script>
+
+    <!-- Highlight JS -->
+    
+    <link rel="stylesheet" href="./styles/felipec.min.css">
+    <script src="./highlight.min.js"></script>
+    <script src="./numbers/highlightjs-line-numbers.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script>hljs.initLineNumbersOnLoad();</script>
+    <script>hljs.highlightAll();</script>
+
 </body>
 </html>    

@@ -4,26 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5. Новые элементы_Графика</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
-
-    <!----Highlight JS---->
-    <link rel="stylesheet" href="./styles/felipec.min.css">
-    <script src="./highlight.min.js"></script>
-    <script src="./numbers/highlightjs-line-numbers.min.js"></script>
-    <script>hljs.highlightAll();</script>
-
-    <script>hljs.initLineNumbersOnLoad();</script>
-    <script>hljs.highlightAll();</script>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HTML5. Графика</title>
 </head>
 <body>
     <button id="back-to-top-button"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
@@ -47,7 +31,7 @@
     </div>   
     </section>
 
-    <!----------- Graphics start ------------->
+    <!-- Graphics start -->
 
     <section class="content1">
         <div class="html-definition">
@@ -56,20 +40,20 @@
         </div>
     </section>
 
-    <!----------- Tag Canvas ------------->
+    <!-- Tag Canvas -->
 
     <section class="tagsdark2">
         <div class="html-tag">
-            <h1 id="tag_canvas">Тег <span class="tags2">&ltcanvas&gt</span></h1>
+            <h1 id="tag_canvas">Тег <span class="tags2">&lt;canvas&gt;</span></h1>
         </div>
         <div class="block-page1">         
             <div class="block-for-tag-description_dark-1col">
                 <h1>Синтаксис:</h1>
-                <p>&ltcanvas>...&ltcanvas/></p><br>
+                <p>&lt;canvas>...&lt;canvas/></p><br>
                 <h1>О теге:</h1>
-                <p>Этот тег можно назвать одним из самых гибких среди новых тегов HTML, ведь он стал новой основой для веб-игр и других интерактивных компонентов.<br><br>&ltCanvas>, как и его имя, представляет собой чистый лист, двумерный холст, на котором создаются <b>растровые</b> изображения и различные формы, а управлять ими необходимо с помощью кода <b>JavaScript</b>. А созданная данным элементом графика уже сочетается и дополняет остальную часть DOM (объектную модель документа).<br><br>Рисунок на холсте HTML, сгенерированный JavaScript может быть преобразован в PNG, и пользователь может загрузить это изображение.</p><br>
+                <p>Этот тег можно назвать одним из самых гибких среди новых тегов HTML, ведь он стал новой основой для веб-игр и других интерактивных компонентов.<br><br>&lt;Canvas>, как и его имя, представляет собой чистый лист, двумерный холст, на котором создаются <b>растровые</b> изображения и различные формы, а управлять ими необходимо с помощью кода <b>JavaScript</b>. А созданная данным элементом графика уже сочетается и дополняет остальную часть DOM (объектную модель документа).<br><br>Рисунок на холсте HTML, сгенерированный JavaScript может быть преобразован в PNG, и пользователь может загрузить это изображение.</p><br>
                 <h1>Разрешённый контент тега:</h1>
-                <p>Прозрачный контент (то есть элементы &lta>, &ltaudio>, &ltcanvas>, &ltdel>, &ltins>, &ltmap>, &ltobject> и &ltvideo>, которые наследуют тип содержимого родительского элемента), фразообразующий или потоковый контент.</p>
+                <p>Прозрачный контент (то есть элементы &lt;a>, &lt;audio>, &lt;canvas>, &lt;del>, &lt;ins>, &lt;map>, &lt;object> и &lt;video>, которые наследуют тип содержимого родительского элемента), фразообразующий или потоковый контент.</p>
             </div>
         </div>
         <div class="table-wrap">
@@ -100,15 +84,15 @@
             <h1>Пример применения тега</h1>
         </div>
         <pre class="precode">
-            <code class="tagscode">&ltcanvas id="canvas" width="500" height="180">&lt/canvas>
-&ltscript> const canvas = document.getElementById("canvas");
+            <code class="tagscode">&lt;canvas id="canvas" width="500" height="180">&lt;/canvas>
+&lt;script> const canvas = document.getElementById("canvas");
            const ctx = canvas.getContext("2d");
            ctx.fillStyle = 'purple';
            ctx.shadowOffsetX = 5;
            ctx.shadowOffsetY = 5;
            ctx.shadowBlur    = 5;
            ctx.shadowColor   = 'rgba(204, 204, 204, 0.9)';
-           ctx.fillRect(50,5,60,150);&lt/script>
+           ctx.fillRect(50,5,60,150);&lt;/script>
         </code>
         </pre>
         <div class="html-tag-result_big_image">
@@ -117,16 +101,16 @@
         </div>
     </section>
 
-    <!----------- Tag Svg ------------->
+    <!--Tag Svg -->
 
     <section class="tagslight2">
         <div class="html-tag">
-            <h1 id="tag_svg">Тег <span class="tags2">&ltsvg&gt</span></h1>
+            <h1 id="tag_svg">Тег <span class="tags2">&lt;svg&gt;</span></h1>
         </div>
         <div class="block-page1">        
             <div class="block-for-tag-description_light-1col">
                 <h1>Синтаксис:</h1>
-                <p>&ltsvg&gt...&lt/svg&gt</p><br>
+                <p>&lt;svg&gt;...&lt;/svg&gt;</p><br>
                 <h1>О теге:</h1>
                 <p>Расшифровывается, как <b>Масштабируемая векторная графика</b> (Scalable vector graphics) и, соответственно, используется для создания двухмерной векторной графики. Представляет собой формат векторного изображения на основе XML для обеспечения интерактивности.<br><br>Как и HTML, SVG имеет DOM (объектную модель документа). SVG, как и HTML поддерживает обработчики событий. А это значит, что, используя эту технологию, можно реализовывать различные интерактивные действия (например, эффекты наведения). Также изображения SVG могут содержать гиперссылки на другие документы.<br><br> SVG можно изменять как из CSS, используя таблицы стилей, так и, используя JavaScript. Содержимое SVG можно анимировать с помощью встроенных элементов анимации. </p><br>
                 <h1>Разрешённый контент тега:</h1>
@@ -137,9 +121,9 @@
             <h1>Пример применения тега</h1>
         </div>
         <pre class="precode">
-            <code class="tagscode">&ltsvg height="100" width="120">
-    &ltcircle cx="80" cy="50" r="40" fill="turquoise"/>
-&lt/svg>
+            <code class="tagscode">&lt;svg height="100" width="120">
+    &lt;circle cx="80" cy="50" r="40" fill="turquoise"/>
+&lt;/svg>
             </code>
         </pre>
         <div class="html-tag-result_big_image">
@@ -148,7 +132,7 @@
         </div>        
     </section>
 
-    <!----------- Footer ------------->
+    <!--Footer -->
 
     <section class="footer3">      
         <div class="colcol-1">
@@ -168,13 +152,20 @@
         </div>
     </section>
 
-    <schljs.highlightAll src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></schljs.highlightAll>
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript">
+    <script src="script.js"></script>
+    <script>
     window.addEventListener("scroll", function() {
         var nav = document.querySelector("nav");
         nav.classList.toggle("sticky", window.scrollY > 0);
     })
     </script>
+
+    <!-- Highlight JS -->
+    <link rel="stylesheet" href="./styles/felipec.min.css">
+    <script src="./highlight.min.js"></script>
+    <script src="./numbers/highlightjs-line-numbers.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script>hljs.initLineNumbersOnLoad();</script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
