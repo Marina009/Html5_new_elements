@@ -105,7 +105,7 @@ html {
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/background.png);
+    background-image: url(images/background1.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -118,7 +118,7 @@ html {
 .header2 {
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/background_semantics.png);
+    background-image: url(images/background_semantics1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -752,6 +752,15 @@ p {
     }
 }
 
+@media (max-width:440px) {
+    .Jobs img {
+        max-width: 300px;
+    }
+    .quote {
+        border: none;
+    }
+}
+
 /*----------- Footer -------------*/
 
 .footer {
@@ -763,7 +772,7 @@ p {
     justify-content: space-around;
     padding-bottom: 50px;
     height: 100%;
-    background-image: url(images/backgroundfooter.png);
+    background-image: url(images/backgroundfooter1.png);
     font-family: 'Ruda', sans-serif; 
     -webkit-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
     -moz-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
@@ -1038,6 +1047,7 @@ p {
     margin-top: 10px;   
 }
 
+
 .html-tag-result img {
     margin-top: 20px;  
     margin-bottom: 130px;
@@ -1063,8 +1073,13 @@ p {
 @media (max-width: 590px) {
     .html-tag-result img {
         width: 330px;
+    }   
+}
+
+@media (max-width: 440px) {
+    .html-tag-result img{
+        width: 300px;
     }
-    
 }
 
 /*----------- Tag Aside (big image) -------------*/
@@ -1591,7 +1606,7 @@ caption {
     justify-content: space-around;
     padding-bottom: 50px;
     height: 100%;
-    background-image: url(images/backgroundfooter_page2.png);
+    background-image: url(images/backgroundfooter_page2_2.png);
     font-family: 'Ruda', sans-serif; 
     -webkit-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
     -moz-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
@@ -1602,7 +1617,7 @@ caption {
 .header3 {
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/background_graphics.png);
+    background-image: url(images/background_graphics1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1642,7 +1657,7 @@ caption {
     justify-content: space-around;
     padding-bottom: 50px;
     height: 100%;
-    background-image: url(images/backgroundfooter_page3.png);
+    background-image: url(images/backgroundfooter_page3_3.png);
     font-family: 'Ruda', sans-serif; 
     -webkit-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
     -moz-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
@@ -1653,7 +1668,7 @@ caption {
 .header4 {
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/background_interaction.png);
+    background-image: url(images/background_interaction1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1689,6 +1704,12 @@ caption {
     }
 }
 
+@media screen and (max-width: 440px) {
+    .text-title-burgundy h1 {
+        font-size: 36px;
+    }
+}
+
 /*---------- Footer For Fourth Page ----------------*/
 .footer4 {
     padding-top: 50px;
@@ -1699,7 +1720,7 @@ caption {
     justify-content: space-around;
     padding-bottom: 50px;
     height: 100%;
-    background-image: url(images/backgroundfooter_page4.png);
+    background-image: url(images/backgroundfooter_page4_4.png);
     font-family: 'Ruda', sans-serif; 
     -webkit-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
     -moz-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
@@ -1710,7 +1731,7 @@ caption {
 .header5 {
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/background_multimedia.png);
+    background-image: url(images/background_multimedia1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1719,6 +1740,34 @@ caption {
     background-color: #E7E7E7;
     font-family: 'Ruda', sans-serif; 
 }
+.text-title-white {
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-title-white h1 {
+    font-size: 100px;
+}
+@media screen and (max-width: 990px) {
+    .text-title-white h1 {
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .text-title-white h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .text-title-white h1 {
+        font-size: 36px;
+    }
+}
+
 
 /*---------- Footer For Fifth Page ----------------*/
 .footer5 {
@@ -1730,7 +1779,7 @@ caption {
     justify-content: space-around;
     padding-bottom: 50px;
     height: 100%;
-    background-image: url(images/backgroundfooter_page5.png);
+    background-image: url(images/backgroundfooter_page5_5.png);
     font-family: 'Ruda', sans-serif; 
     -webkit-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
     -moz-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
@@ -1839,15 +1888,22 @@ caption {
 @media (max-width: 590px) {
     .html-tag-result-two_images img {
         width: 330px;
+    }    
+}
+
+@media (max-width: 440px) {
+
+    .html-tag-result-two_images img{
+        width: 300px;
     }
-    
+
 }
 
 /*---------- Header for Sixth Page About Form Elements ----------------*/
 .header6 {
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/background_form.png);
+    background-image: url(images/background_form1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1867,7 +1923,7 @@ caption {
     justify-content: space-around;
     padding-bottom: 50px;
     height: 100%;
-    background-image: url(images/backgroundfooter_page6.png);
+    background-image: url(images/backgroundfooter_page6_6.png);
     font-family: 'Ruda', sans-serif; 
     -webkit-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
     -moz-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
@@ -1878,7 +1934,7 @@ caption {
 .header7 {
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/background_ruby.png);
+    background-image: url(images/background_ruby1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1918,7 +1974,7 @@ caption {
     justify-content: space-around;
     padding-bottom: 50px;
     height: 100%;
-    background-image: url(images/backgroundfooter_page7.png);
+    background-image: url(images/backgroundfooter_page7_7.png);
     font-family: 'Ruda', sans-serif; 
     -webkit-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
     -moz-box-shadow: 0px -5px 5px -4px rgba(34, 60, 80, 0.61);
