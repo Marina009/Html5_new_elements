@@ -32,10 +32,6 @@ function scrollFunction() {
 
 backToTopButton.addEventListener("click", smoothScrollBackToTop);
 
-/*function backToTop() {
-    window.scrollTo(0,0);
-}
-*/
 
 function smoothScrollBackToTop() {
     const targetPosition = 0;
@@ -60,9 +56,4 @@ function easeInOutCubic(t, b, c, d) {
     t -= 2;
     return c/2*(t*t*t + 2) + b;
 };
-
-
-
-
-
 
