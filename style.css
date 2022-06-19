@@ -559,6 +559,15 @@ p {
     color: #ffffff;
 }
 
+@media screen and (max-width: 1060px) and (min-width: 700px) {
+
+    .timeline-content {
+        margin-right: 12px;
+        margin-left: 12px;
+        
+    }
+}
+
 @media screen and (max-width: 700px) {
     .timeline-items::before {
         left: 7px;
@@ -736,6 +745,12 @@ p {
     font-size: 26px;
 }
 
+@media (max-width: 1380px) {
+    .quote {
+        border: none;
+    }
+}
+
 @media (max-width: 700px) {
     .special_block {
         flex-direction: column;
@@ -751,6 +766,16 @@ p {
         font-size: 20px;
     }
 }
+
+@media (max-width:440px) {
+    .Jobs img {
+        max-width: 300px;
+    }
+    .quote {
+        border: none;
+    }
+}
+
 
 @media (max-width:440px) {
     .Jobs img {
